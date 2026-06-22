@@ -1,7 +1,7 @@
 [build]
   base = "/"
   publish = "web/build"
-  command = "npm install --workspace=web --include-workspace-root && npm run build --workspace=web"
+  command = "npm run build --workspace=web"
 
 [[redirects]]
   from = "/api/*"
