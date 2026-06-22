@@ -22,3 +22,7 @@ __pycache__/
 .idea/
 *.swp
 *.swo
+
+# Large data files (raw corpus, generated tmp files)
+raw/
+backend/src/data/generated/tmp/
