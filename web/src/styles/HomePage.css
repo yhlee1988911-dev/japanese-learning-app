@@ -1,0 +1,763 @@
+.home-shell {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.practice-studio {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.studio-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.studio-header__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.studio-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.eyebrow {
+  color: #277c68;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.studio-header h1 {
+  color: #17211f;
+  font-size: 48px;
+  line-height: 1;
+  margin: 0;
+}
+
+.daily-chip {
+  align-items: center;
+  background: #17211f;
+  border-radius: 8px;
+  color: #fff7e8;
+  display: flex;
+  gap: 12px;
+  min-height: 58px;
+  padding: 10px 16px;
+}
+
+.daily-chip__value {
+  align-items: center;
+  background: #fff7e8;
+  border-radius: 6px;
+  color: #17211f;
+  display: inline-flex;
+  font-size: 20px;
+  font-weight: 900;
+  height: 38px;
+  justify-content: center;
+  width: 48px;
+}
+
+.studio-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1fr) 340px;
+}
+
+.setup-panel,
+.session-panel {
+  background: rgba(255, 253, 247, 0.92);
+  border: 1px solid rgba(23, 33, 31, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 18px 60px rgba(30, 41, 37, 0.12);
+  padding: 24px;
+}
+
+.section-heading {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin: 0 0 14px;
+}
+
+.section-heading:not(:first-child) {
+  margin-top: 28px;
+}
+
+.section-heading h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.step-mark {
+  align-items: center;
+  background: #2db78d;
+  border-radius: 999px;
+  color: white;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  height: 26px;
+  justify-content: center;
+  width: 26px;
+}
+
+.level-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.level-tile,
+.mode-option,
+.count-control button,
+.start-button {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.level-tile {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 112px;
+  padding: 16px 12px;
+  text-align: left;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.level-tile:hover,
+.level-tile.is-selected {
+  border-color: #17211f;
+  box-shadow: 0 10px 24px rgba(23, 33, 31, 0.14);
+  transform: translateY(-2px);
+}
+
+.level-title {
+  color: #17211f;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.level-subtitle {
+  color: rgba(23, 33, 31, 0.7);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.level-tile--fresh,
+.session-badge--fresh {
+  background: #dff7ec;
+}
+
+.level-tile--mint,
+.session-badge--mint {
+  background: #d9f2f2;
+}
+
+.level-tile--sky,
+.session-badge--sky {
+  background: #dcecff;
+}
+
+.level-tile--amber,
+.session-badge--amber {
+  background: #ffe8bd;
+}
+
+.level-tile--rose,
+.session-badge--rose {
+  background: #ffd9d2;
+}
+
+.level-tile--review {
+  background: #d4837a;
+  border: 2px solid transparent;
+}
+
+.level-tile--review .level-title {
+  color: #17211f;
+}
+
+.level-tile--review .level-subtitle {
+  color: rgba(23, 33, 31, 0.7);
+}
+
+.level-tile--review:hover {
+  border-color: #17211f;
+  box-shadow: 0 10px 24px rgba(23, 33, 31, 0.14);
+  transform: translateY(-2px);
+}
+
+.mode-control {
+  background: #ede7dc;
+  border-radius: 8px;
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 6px;
+}
+
+.mode-option {
+  background: transparent;
+  border-radius: 6px;
+  color: #44514d;
+  min-height: 76px;
+  padding: 12px;
+  text-align: left;
+}
+
+.mode-option.is-selected {
+  background: #fffdf7;
+  box-shadow: 0 8px 20px rgba(23, 33, 31, 0.1);
+  color: #17211f;
+}
+
+.mode-option span,
+.mode-option small {
+  display: block;
+}
+
+.mode-option span {
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.mode-option small {
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.35;
+  opacity: 0.75;
+}
+
+.count-control {
+  align-items: stretch;
+  display: flex;
+  gap: 10px;
+}
+
+.count-control button {
+  background: #fffdf7;
+  border: 1px solid rgba(23, 33, 31, 0.14);
+  border-radius: 8px;
+  color: #17211f;
+  font-size: 18px;
+  font-weight: 900;
+  height: 48px;
+  width: 72px;
+}
+
+.count-control button.is-selected {
+  background: #17211f;
+  color: #fff7e8;
+}
+
+.custom-count {
+  align-items: center;
+  background: #fffdf7;
+  border: 1px solid rgba(23, 33, 31, 0.14);
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  min-height: 48px;
+  padding: 6px 10px;
+}
+
+.custom-count span,
+.custom-count small {
+  color: rgba(23, 33, 31, 0.58);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.custom-count input {
+  background: #f4efe6;
+  border: 0;
+  border-radius: 6px;
+  color: #17211f;
+  font: inherit;
+  font-weight: 900;
+  height: 34px;
+  text-align: center;
+  width: 58px;
+}
+
+.custom-count input:focus {
+  box-shadow: 0 0 0 3px rgba(45, 183, 141, 0.18);
+  outline: none;
+}
+
+.auto-next-control {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.auto-next-control input {
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.auto-next-control > span {
+  background: #d8d1c5;
+  border-radius: 999px;
+  height: 26px;
+  position: relative;
+  transition: background 160ms ease;
+  width: 46px;
+}
+
+.auto-next-control > span::after {
+  background: white;
+  border-radius: 50%;
+  content: '';
+  height: 20px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  transition: transform 160ms ease;
+  width: 20px;
+}
+
+.auto-next-control input:checked + span {
+  background: #2db78d;
+}
+
+.auto-next-control input:checked + span::after {
+  transform: translateX(20px);
+}
+
+.auto-next-control input:focus-visible + span {
+  box-shadow: 0 0 0 3px rgba(45, 183, 141, 0.2);
+}
+
+.auto-next-control strong {
+  color: #44514d;
+  font-size: 14px;
+}
+
+.session-panel {
+  align-self: start;
+  min-height: 420px;
+  position: sticky;
+  top: 24px;
+}
+
+.session-badge {
+  align-items: center;
+  border-radius: 8px;
+  color: #17211f;
+  display: flex;
+  font-size: 52px;
+  font-weight: 950;
+  height: 122px;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.session-panel h2 {
+  font-size: 28px;
+  margin: 0 0 18px;
+}
+
+.session-summary {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 24px;
+}
+
+.session-summary div {
+  align-items: center;
+  border-bottom: 1px solid rgba(23, 33, 31, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.session-summary dt {
+  color: rgba(23, 33, 31, 0.58);
+  font-weight: 800;
+}
+
+.session-summary dd {
+  font-weight: 900;
+  margin: 0;
+}
+
+.start-button {
+  background: #ff6f61;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  min-height: 56px;
+  width: 100%;
+}
+
+.start-button:hover {
+  background: #ef5d50;
+}
+
+.review-button {
+  background: transparent;
+  border: 2px solid #17211f;
+  border-radius: 8px;
+  color: #17211f;
+  cursor: pointer;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 10px;
+  min-height: 50px;
+  width: 100%;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.review-button:hover {
+  background: #17211f;
+  color: #fff7e8;
+}
+
+@media (max-width: 900px) {
+  .home-shell {
+    padding: 18px;
+  }
+
+  .studio-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .studio-header h1 {
+    font-size: 38px;
+  }
+
+  .studio-grid,
+  .mode-control {
+    grid-template-columns: 1fr;
+  }
+
+  .level-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .session-panel {
+    min-height: auto;
+    position: static;
+  }
+
+  .count-control {
+    flex-wrap: wrap;
+  }
+}
+
+/* ===== 手机端专用适配 (≤480px) ===== */
+/* 以 iPhone 15 (393×852) 为参考，刚好一满屏 */
+/* 功能区元素增大，内容间距增大，底部只留圆弧区域 */
+@media (max-width: 480px) {
+  .home-shell {
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .practice-studio {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0;
+  }
+
+  .studio-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 0;
+    flex-shrink: 0;
+    padding: 12px 16px 8px;
+  }
+
+  .studio-header__left {
+    gap: 10px;
+  }
+
+  .studio-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  .studio-header h1 {
+    font-size: 18px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+
+  .daily-chip {
+    min-height: 28px;
+    padding: 4px 10px;
+    gap: 5px;
+    flex-shrink: 0;
+  }
+
+  .daily-chip__value {
+    font-size: 11px;
+    height: 18px;
+    width: 22px;
+  }
+
+  .daily-chip span:last-child {
+    font-size: 10px;
+  }
+
+  .studio-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    flex: 1;
+  }
+
+  .setup-panel {
+    padding: 0 16px;
+    order: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .setup-panel > .section-heading:first-child {
+    margin: 0 0 8px;
+  }
+
+  .section-heading {
+    margin: 0 0 8px;
+  }
+
+  .section-heading:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  .section-heading h2 {
+    font-size: 14px;
+  }
+
+  .step-mark {
+    font-size: 11px;
+    height: 20px;
+    width: 20px;
+  }
+
+  /* 难度选择 - 三排布局：N5 N4 / N3 N2 / N1 错题回顾 */
+  .level-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .level-grid > :nth-child(5) {
+    grid-column: 1;
+  }
+
+  .level-grid > :nth-child(6) {
+    grid-column: 2;
+  }
+
+  .level-tile {
+    min-height: 68px;
+    padding: 10px 12px;
+    gap: 4px;
+    border-width: 1.5px;
+    text-align: left;
+  }
+
+  .level-title {
+    font-size: 20px;
+  }
+
+  .level-subtitle {
+    font-size: 12px;
+  }
+
+  /* 出题方式 - 2x2 */
+  .mode-control {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .mode-option {
+    min-height: 46px;
+    padding: 8px 10px;
+  }
+
+  .mode-option span {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  .mode-option small {
+    font-size: 12px;
+  }
+
+  /* 题量 */
+  .count-control {
+    gap: 8px;
+  }
+
+  .count-control button {
+    font-size: 15px;
+    height: 38px;
+    width: 52px;
+    min-width: 0;
+  }
+
+  .custom-count {
+    min-height: 38px;
+    padding: 4px 8px;
+    gap: 5px;
+  }
+
+  .custom-count span {
+    font-size: 13px;
+  }
+
+  .custom-count input {
+    height: 26px;
+    width: 44px;
+    font-size: 14px;
+  }
+
+  .custom-count small {
+    font-size: 12px;
+  }
+
+  /* 开关选项 */
+  .auto-next-control {
+    margin-top: 8px;
+    gap: 10px;
+  }
+
+  .auto-next-control > span {
+    height: 24px;
+    width: 42px;
+    flex-shrink: 0;
+  }
+
+  .auto-next-control > span::after {
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    top: 3px;
+  }
+
+  .auto-next-control input:checked + span::after {
+    transform: translateX(18px);
+  }
+
+  .auto-next-control strong {
+    font-size: 14px;
+  }
+
+
+  /* 右侧面板 - 手机端简化：横向摘要 + 按钮行，底部只留圆弧区域 */
+  .session-panel {
+    order: 0;
+    padding: 10px 16px 4px;
+    min-height: auto;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .session-badge {
+    display: none;
+  }
+
+  .session-panel h2 {
+    display: none;
+  }
+
+  .session-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .session-summary div {
+    border-bottom: none;
+    padding: 0;
+    gap: 3px;
+  }
+
+  .session-summary dt {
+    display: none;
+  }
+
+  .session-summary dd {
+    font-size: 13px;
+    background: #ede7dc;
+    border-radius: 5px;
+    padding: 4px 9px;
+  }
+
+  .start-button {
+    font-size: 16px;
+    min-height: 46px;
+    width: auto;
+    flex: 1;
+    min-width: 100px;
+  }
+
+  .review-button {
+    font-size: 14px;
+    min-height: 46px;
+    margin-top: 0;
+    width: auto;
+    flex: 1;
+    min-width: 90px;
+    border-width: 1.5px;
+  }
+}
+
+
+
+
+
+

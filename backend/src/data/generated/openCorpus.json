@@ -1,0 +1,4004 @@
+{
+  "updatedAt": "2026-06-22T04:53:17.492Z",
+  "vocabulary": [
+    {
+      "kanji": "ああ",
+      "hiragana": "ああ",
+      "romaji": "aa",
+      "meaning": "啊！，哦！",
+      "meaningEn": "Ah!, Oh!",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "会う",
+      "hiragana": "あう",
+      "romaji": "au",
+      "meaning": "遇见，看见",
+      "meaningEn": "to meet, to see",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "青",
+      "hiragana": "あお",
+      "romaji": "ao",
+      "meaning": "蓝色的",
+      "meaningEn": "blue",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "青い",
+      "hiragana": "あおい",
+      "romaji": "aoi",
+      "meaning": "蓝色的",
+      "meaningEn": "blue",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "赤",
+      "hiragana": "あか",
+      "romaji": "aka",
+      "meaning": "红色的",
+      "meaningEn": "red",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "踏む",
+      "hiragana": "ふむ",
+      "romaji": "fumu",
+      "meaning": "踩, 踩",
+      "meaningEn": "to step on, to tread on",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "すっと",
+      "hiragana": "すっと",
+      "romaji": "sutto",
+      "meaning": "直、快",
+      "meaningEn": "straight, quickly",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "盗む",
+      "hiragana": "ぬすむ",
+      "romaji": "nusumu",
+      "meaning": "偷窃；抢劫",
+      "meaningEn": "to steal; to rob",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "大抵",
+      "hiragana": "たいてい",
+      "romaji": "taitei",
+      "meaning": "一般来说，通常",
+      "meaningEn": "generally, usually",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "作法",
+      "hiragana": "さほう",
+      "romaji": "sahou",
+      "meaning": "礼仪、礼节、礼节",
+      "meaningEn": "manners, etiquette, propriety",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "様々",
+      "hiragana": "さまざま",
+      "romaji": "samazama",
+      "meaning": "多种多样的，各种各样的",
+      "meaningEn": "varied, various",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "冷ます",
+      "hiragana": "さます",
+      "romaji": "samasu",
+      "meaning": "冷却，让冷却",
+      "meaningEn": "to cool, to let cool",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "覚ます",
+      "hiragana": "さます",
+      "romaji": "samasu",
+      "meaning": "唤醒",
+      "meaningEn": "to awaken",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "冷める",
+      "hiragana": "さめる",
+      "romaji": "sameru",
+      "meaning": "变得酷，磨损",
+      "meaningEn": "to become cool, to wear off",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "現像",
+      "hiragana": "げんぞう",
+      "romaji": "genzou",
+      "meaning": "显影（胶片）",
+      "meaningEn": "developing (film)",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "原則",
+      "hiragana": "げんそく",
+      "romaji": "gensoku",
+      "meaning": "原则、一般规则",
+      "meaningEn": "principle, general rule",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "見地",
+      "hiragana": "けんち",
+      "romaji": "kenchi",
+      "meaning": "观点看法",
+      "meaningEn": "point of view",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "現地",
+      "hiragana": "げんち",
+      "romaji": "genchi",
+      "meaning": "实际地点，当地",
+      "meaningEn": "actual place, local",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "限定",
+      "hiragana": "げんてい",
+      "romaji": "gentei",
+      "meaning": "限制，限制",
+      "meaningEn": "limit, restriction",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "赤い",
+      "hiragana": "あかい",
+      "romaji": "akai",
+      "meaning": "红色的",
+      "meaningEn": "red",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "明るい",
+      "hiragana": "あかるい",
+      "romaji": "akarui",
+      "meaning": "明亮（指性格或天气）；快乐",
+      "meaningEn": "bright (in reference to personality or weather); cheerful",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "秋",
+      "hiragana": "あき",
+      "romaji": "aki",
+      "meaning": "秋天（季节）",
+      "meaningEn": "fall (season)",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "開く",
+      "hiragana": "あく",
+      "romaji": "aku",
+      "meaning": "开放，变得开放",
+      "meaningEn": "to open, to become open",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "開ける",
+      "hiragana": "あける",
+      "romaji": "akeru",
+      "meaning": "打开 (v.t.)",
+      "meaningEn": "to open (v.t.)",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "とうとう",
+      "hiragana": "とうとう",
+      "romaji": "toutou",
+      "meaning": "最后，最后",
+      "meaningEn": "finally, at last",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "ガソリン",
+      "hiragana": "ガソリン",
+      "romaji": "gasorin",
+      "meaning": "汽油，汽油",
+      "meaningEn": "gasoline, petrol",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "鳴る",
+      "hiragana": "なる",
+      "romaji": "naru",
+      "meaning": "发出声音, 响起 (v.i.)",
+      "meaningEn": "to sound, to ring (v.i.)",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "しっかり",
+      "hiragana": "しっかり",
+      "romaji": "shikkari",
+      "meaning": "坚定地，稳定地",
+      "meaningEn": "firmly, steady",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "生きる",
+      "hiragana": "いきる",
+      "romaji": "ikiru",
+      "meaning": "生活",
+      "meaningEn": "to live",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "覚める",
+      "hiragana": "さめる",
+      "romaji": "sameru",
+      "meaning": "醒来，醒来",
+      "meaningEn": "to wake, to wake up",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "左右",
+      "hiragana": "さゆう",
+      "romaji": "sayuu",
+      "meaning": "左右;影响",
+      "meaningEn": "left and right; influence",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "皿",
+      "hiragana": "さら",
+      "romaji": "sara",
+      "meaning": "盘子，盘子",
+      "meaningEn": "plate, dish",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "更に",
+      "hiragana": "さらに",
+      "romaji": "sarani",
+      "meaning": "此外，此外",
+      "meaningEn": "furthermore, moreover",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "去る",
+      "hiragana": "さる",
+      "romaji": "saru",
+      "meaning": "离开，走开",
+      "meaningEn": "to leave, to go away",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "相変わらず",
+      "hiragana": "あいかわらず",
+      "romaji": "aikawarazu",
+      "meaning": "一如既往，一如既往，一如既往，一如既往，一如既往",
+      "meaningEn": "as usual, as always, as before, as ever, still",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "あいまい",
+      "hiragana": "あいまい",
+      "romaji": "aimai",
+      "meaning": "模糊的，含糊的",
+      "meaningEn": "vague, ambiguous",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "扇ぐ",
+      "hiragana": "あおぐ",
+      "romaji": "aogu",
+      "meaning": "扇动，扇动",
+      "meaningEn": "to fan, to flap",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "青白い",
+      "hiragana": "あおじろい",
+      "romaji": "aojiroi",
+      "meaning": "苍白",
+      "meaningEn": "pale",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "呆れる",
+      "hiragana": "あきれる",
+      "romaji": "akireru",
+      "meaning": "感到震惊，感到震惊",
+      "meaningEn": "to be shocked, to be appalled",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "原点",
+      "hiragana": "げんてん",
+      "romaji": "genten",
+      "meaning": "原点（坐标、起点）",
+      "meaningEn": "origin (coordinates, starting point)",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "原典",
+      "hiragana": "げんてん",
+      "romaji": "genten",
+      "meaning": "原始、来源",
+      "meaningEn": "original, source",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "原爆",
+      "hiragana": "げんばく",
+      "romaji": "genbaku",
+      "meaning": "原子弹",
+      "meaningEn": "atomic bomb",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "原文",
+      "hiragana": "げんぶん",
+      "romaji": "genbun",
+      "meaning": "文字，原文",
+      "meaningEn": "the text, original",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "厳密",
+      "hiragana": "げんみつ",
+      "romaji": "genmitsu",
+      "meaning": "严格、封闭",
+      "meaningEn": "strict, close",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "上げる",
+      "hiragana": "あげる",
+      "romaji": "ageru",
+      "meaning": "举起，举起",
+      "meaningEn": "to raise, to lift",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "朝",
+      "hiragana": "あさ",
+      "romaji": "asa",
+      "meaning": "早晨",
+      "meaningEn": "morning",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "朝御飯",
+      "hiragana": "あさごはん",
+      "romaji": "asagohan",
+      "meaning": "早餐",
+      "meaningEn": "breakfast",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "明後日",
+      "hiragana": "あさって",
+      "romaji": "asatte",
+      "meaning": "后天",
+      "meaningEn": "day after tomorrow",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "明日",
+      "hiragana": "あした",
+      "romaji": "ashita",
+      "meaning": "明天",
+      "meaningEn": "tomorrow",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "あそこ",
+      "hiragana": "あそこ",
+      "romaji": "asoko",
+      "meaning": "那里，那边，那个地方",
+      "meaningEn": "there, over there, that place",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "遊ぶ",
+      "hiragana": "あそぶ",
+      "romaji": "asobu",
+      "meaning": "玩；愉快地度过时光；出去玩",
+      "meaningEn": "to play; to spend time pleasantly; to hang out",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "暖かい",
+      "hiragana": "あたたかい",
+      "romaji": "atatakai",
+      "meaning": "温暖的",
+      "meaningEn": "warm",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "頭",
+      "hiragana": "あたま",
+      "romaji": "atama",
+      "meaning": "头",
+      "meaningEn": "head",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "新しい",
+      "hiragana": "あたらしい",
+      "romaji": "atarashii",
+      "meaning": "新的",
+      "meaningEn": "new",
+      "level": "N5",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n5.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "苦い",
+      "hiragana": "にがい",
+      "romaji": "nigai",
+      "meaning": "苦的",
+      "meaningEn": "bitter",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "沸く",
+      "hiragana": "わく",
+      "romaji": "waku",
+      "meaning": "煮沸，变热",
+      "meaningEn": "to boil, to grow hot",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "意見",
+      "hiragana": "いけん",
+      "romaji": "iken",
+      "meaning": "意见、观点、想法",
+      "meaningEn": "opinion, view, idea",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "漫画",
+      "hiragana": "まんが",
+      "romaji": "manga",
+      "meaning": "漫画（书）、卡通",
+      "meaningEn": "comic (book), cartoon",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "ステレオ",
+      "hiragana": "ステレオ",
+      "romaji": "sutereo",
+      "meaning": "立体声",
+      "meaningEn": "stereo",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "医学",
+      "hiragana": "いがく",
+      "romaji": "igaku",
+      "meaning": "医学",
+      "meaningEn": "medical science",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "テキスト",
+      "hiragana": "テキスト",
+      "romaji": "tekisuto",
+      "meaning": "文本;教科书",
+      "meaningEn": "text; text book",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "折る",
+      "hiragana": "おる",
+      "romaji": "oru",
+      "meaning": "折断，折断；弯曲",
+      "meaningEn": "to snap, to break; to bend",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "うかがう",
+      "hiragana": "うかがう",
+      "romaji": "ukagau",
+      "meaning": "询问",
+      "meaningEn": "to ask",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "聞こえる",
+      "hiragana": "きこえる",
+      "romaji": "kikoeru",
+      "meaning": "被听到, 被听到",
+      "meaningEn": "to be heard, to be audible",
+      "level": "N4",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n4.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "猿",
+      "hiragana": "さる",
+      "romaji": "saru",
+      "meaning": "猴",
+      "meaningEn": "monkey",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "騒ぎ",
+      "hiragana": "さわぎ",
+      "romaji": "sawagi",
+      "meaning": "骚乱，骚乱",
+      "meaningEn": "uproar, disturbance",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "参加",
+      "hiragana": "さんか",
+      "romaji": "sanka",
+      "meaning": "参与",
+      "meaningEn": "participation",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "参考",
+      "hiragana": "さんこう",
+      "romaji": "sankou",
+      "meaning": "参考、咨询",
+      "meaningEn": "reference, consultation",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "賛成",
+      "hiragana": "さんせい",
+      "romaji": "sansei",
+      "meaning": "批准、同意",
+      "meaningEn": "approval, agreement",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "酸性",
+      "hiragana": "さんせい",
+      "romaji": "sansei",
+      "meaning": "酸度",
+      "meaningEn": "acidity",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "酸素",
+      "hiragana": "さんそ",
+      "romaji": "sanso",
+      "meaning": "氧",
+      "meaningEn": "oxygen",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "氏",
+      "hiragana": "し",
+      "romaji": "shi",
+      "meaning": "姓氏、血统",
+      "meaningEn": "family name, lineage",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "詩",
+      "hiragana": "し",
+      "romaji": "shi",
+      "meaning": "诗;诗",
+      "meaningEn": "poem; poetry",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "幸せ",
+      "hiragana": "しあわせ",
+      "romaji": "shiawase",
+      "meaning": "幸福、祝福",
+      "meaningEn": "happiness, blessing",
+      "level": "N3",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n3.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "アクセント",
+      "hiragana": "アクセント",
+      "romaji": "akusento",
+      "meaning": "口音",
+      "meaningEn": "accent",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "あくび",
+      "hiragana": "あくび",
+      "romaji": "akubi",
+      "meaning": "打哈欠",
+      "meaningEn": "yawn",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "飽くまで",
+      "hiragana": "あくまで",
+      "romaji": "akumade",
+      "meaning": "到最后，到最后，固执地",
+      "meaningEn": "to the end, to the last, stubbornly",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "明け方",
+      "hiragana": "あけがた",
+      "romaji": "akegata",
+      "meaning": "黎明",
+      "meaningEn": "dawn",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "憧れる",
+      "hiragana": "あこがれる",
+      "romaji": "akogareru",
+      "meaning": "渴望、渴望",
+      "meaningEn": "to long for, to yearn after",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "朝寝坊",
+      "hiragana": "あさねぼう",
+      "romaji": "asanebou",
+      "meaning": "睡过头、晚起",
+      "meaningEn": "oversleeping, late riser",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "足跡",
+      "hiragana": "あしあと",
+      "romaji": "ashiato",
+      "meaning": "脚印",
+      "meaningEn": "footprint",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "足元",
+      "hiragana": "あしもと",
+      "romaji": "ashimoto",
+      "meaning": "在某人的脚下",
+      "meaningEn": "at one's feet",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "味わう",
+      "hiragana": "あじわう",
+      "romaji": "ajiwau",
+      "meaning": "品尝，品尝",
+      "meaningEn": "to taste, to savor",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "預かる",
+      "hiragana": "あずかる",
+      "romaji": "azukaru",
+      "meaning": "保管、保管、保管",
+      "meaningEn": "to keep in custody, to receive on deposit, to take charge of",
+      "level": "N2",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n2.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "賢明",
+      "hiragana": "けんめい",
+      "romaji": "kenmei",
+      "meaning": "智慧、聪明、谨慎",
+      "meaningEn": "wisdom, intelligence, prudence",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "倹約",
+      "hiragana": "けんやく",
+      "romaji": "ken'yaku",
+      "meaning": "节俭、经济、节俭",
+      "meaningEn": "thrift, economy, frugality",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "原油",
+      "hiragana": "げんゆ",
+      "romaji": "gen'yu",
+      "meaning": "原油",
+      "meaningEn": "crude oil",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "兼用",
+      "hiragana": "けんよう",
+      "romaji": "ken'you",
+      "meaning": "多用途，联合使用",
+      "meaningEn": "multi-use, combined use",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "権力",
+      "hiragana": "けんりょく",
+      "romaji": "kenryoku",
+      "meaning": "（政治）权力、权威、影响力",
+      "meaningEn": "(political) power, authority, influence",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "言論",
+      "hiragana": "げんろん",
+      "romaji": "genron",
+      "meaning": "讨论、演讲",
+      "meaningEn": "discussion, speech",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "語彙",
+      "hiragana": "ごい",
+      "romaji": "goi",
+      "meaning": "词汇表，词汇表",
+      "meaningEn": "vocabulary, glossary",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "恋する",
+      "hiragana": "こいする",
+      "romaji": "koisuru",
+      "meaning": "爱上，爱上",
+      "meaningEn": "to fall in love with, to love",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "甲",
+      "hiragana": "こう",
+      "romaji": "kou",
+      "meaning": "排名第一；壳",
+      "meaningEn": "1st in rank; shell",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    },
+    {
+      "kanji": "好意",
+      "hiragana": "こうい",
+      "romaji": "koui",
+      "meaning": "善意、恩惠、礼貌",
+      "meaningEn": "good will, favor, courtesy",
+      "level": "N1",
+      "source": {
+        "name": "Open Anki JLPT Decks",
+        "url": "https://github.com/jamsinclair/open-anki-jlpt-decks/blob/main/src/n1.csv",
+        "license": "MIT"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "tatoeba-179417-青い",
+      "sentence": "空は___。",
+      "speech": "空は青い。",
+      "answers": [
+        "青い",
+        "あおい",
+        "aoi"
+      ],
+      "meaning": "天空是蓝色的。",
+      "explanation": "青い（あおい）：蓝色的",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/179417",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "bunbuku",
+        "translationAuthor": "Versuss"
+      }
+    },
+    {
+      "id": "tatoeba-184110-踏む",
+      "sentence": "割れたガラスを___な。",
+      "speech": "割れたガラスを踏むな。",
+      "answers": [
+        "踏む",
+        "ふむ",
+        "fumu"
+      ],
+      "meaning": "不要踩在碎玻璃上。",
+      "explanation": "踏む（ふむ）：踩, 踩",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/184110",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "mookeee",
+        "translationAuthor": "Martha"
+      }
+    },
+    {
+      "id": "tatoeba-184835-様々",
+      "sentence": "外交官には___な特権が与えられている。",
+      "speech": "外交官には様々な特権が与えられている。",
+      "answers": [
+        "様々",
+        "さまざま",
+        "samazama"
+      ],
+      "meaning": "外交官有多种特权。",
+      "explanation": "様々（さまざま）：多种多样的，各种各样的",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/184835",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "verdastelo9604"
+      }
+    },
+    {
+      "id": "tatoeba-10667328-赤い",
+      "sentence": "リンゴは___。",
+      "speech": "リンゴは赤い。",
+      "answers": [
+        "赤い",
+        "あかい",
+        "akai"
+      ],
+      "meaning": "蘋果是紅的。",
+      "explanation": "赤い（あかい）：红色的",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/10667328",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "YT",
+        "translationAuthor": "LeviHighway"
+      }
+    },
+    {
+      "id": "tatoeba-10724051-秋",
+      "sentence": "___ですね。",
+      "speech": "秋ですね。",
+      "answers": [
+        "秋",
+        "あき",
+        "aki"
+      ],
+      "meaning": "秋天到了。",
+      "explanation": "秋（あき）：秋天（季节）",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/10724051",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "small_snow",
+        "translationAuthor": "U2FS"
+      }
+    },
+    {
+      "id": "tatoeba-81627-開く",
+      "sentence": "本を___な。",
+      "speech": "本を開くな。",
+      "answers": [
+        "開く",
+        "あく",
+        "aku"
+      ],
+      "meaning": "不要打开你的书。",
+      "explanation": "開く（あく）：开放，变得开放",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/81627",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "bunbuku",
+        "translationAuthor": "fucongcong"
+      }
+    },
+    {
+      "id": "tatoeba-201788-開ける",
+      "sentence": "ドアを___と彼が寝ていた。",
+      "speech": "ドアを開けると彼が寝ていた。",
+      "answers": [
+        "開ける",
+        "あける",
+        "akeru"
+      ],
+      "meaning": "当我打开门的时候，我发现他睡着了。",
+      "explanation": "開ける（あける）：打开 (v.t.)",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/201788",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "fucongcong"
+      }
+    },
+    {
+      "id": "tatoeba-226380-ガソリン",
+      "sentence": "___が尽きてしまったよ。",
+      "speech": "ガソリンが尽きてしまったよ。",
+      "answers": [
+        "ガソリン",
+        "gasorin"
+      ],
+      "meaning": "我們沒油了。",
+      "explanation": "ガソリン（ガソリン）：汽油，汽油",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/226380",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "arnab",
+        "translationAuthor": "DaoSeng"
+      }
+    },
+    {
+      "id": "tatoeba-196691-鳴る",
+      "sentence": "ベルは正午に___。",
+      "speech": "ベルは正午に鳴る。",
+      "answers": [
+        "鳴る",
+        "なる",
+        "naru"
+      ],
+      "meaning": "正午時分鐘聲響起。",
+      "explanation": "鳴る（なる）：发出声音, 响起 (v.i.)",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/196691",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "Martha"
+      }
+    },
+    {
+      "id": "tatoeba-80022-覚める",
+      "sentence": "目が___と雪が降っていた。",
+      "speech": "目が覚めると雪が降っていた。",
+      "answers": [
+        "覚める",
+        "さめる",
+        "sameru"
+      ],
+      "meaning": "當我醒來時，天正下著雪。",
+      "explanation": "覚める（さめる）：醒来，醒来",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/80022",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "bunbuku",
+        "translationAuthor": "Martha"
+      }
+    },
+    {
+      "id": "tatoeba-8693841-左右",
+      "sentence": "彼は___を見た。",
+      "speech": "彼は左右を見た。",
+      "answers": [
+        "左右",
+        "さゆう",
+        "sayuu"
+      ],
+      "meaning": "他左右看了看。",
+      "explanation": "左右（さゆう）：左右;影响",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/8693841",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "small_snow",
+        "translationAuthor": "crescat"
+      }
+    },
+    {
+      "id": "tatoeba-8822144-皿",
+      "sentence": "___が必要だよ。",
+      "speech": "皿が必要だよ。",
+      "answers": [
+        "皿",
+        "さら",
+        "sara"
+      ],
+      "meaning": "我需要盘子。",
+      "explanation": "皿（さら）：盘子，盘子",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/8822144",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "small_snow",
+        "translationAuthor": "iiujik"
+      }
+    },
+    {
+      "id": "tatoeba-2715448-原点",
+      "sentence": "___を中心とする半径2の円と，直線 y = x − 1 の交点を求めよ。",
+      "speech": "原点を中心とする半径2の円と，直線 y = x − 1 の交点を求めよ。",
+      "answers": [
+        "原点",
+        "げんてん",
+        "genten"
+      ],
+      "meaning": "已知一个以原点为圆心，半径为2的圆，请求出它与直线 y = x - 1 的交点。",
+      "explanation": "原点（げんてん）：原点（坐标、起点）",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/2715448",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "tommy_san",
+        "translationAuthor": "jan_OkulaJu"
+      }
+    },
+    {
+      "id": "tatoeba-174988-原爆",
+      "sentence": "___は人類にとって重大な脅威だ。",
+      "speech": "原爆は人類にとって重大な脅威だ。",
+      "answers": [
+        "原爆",
+        "げんばく",
+        "genbaku"
+      ],
+      "meaning": "核武器是人类生存的致命威胁。",
+      "explanation": "原爆（げんばく）：原子弹",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/174988",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "wangzi0921"
+      }
+    },
+    {
+      "id": "tatoeba-206594-原文",
+      "sentence": "その翻訳は___に極めて忠実である。",
+      "speech": "その翻訳は原文に極めて忠実である。",
+      "answers": [
+        "原文",
+        "げんぶん",
+        "genbun"
+      ],
+      "meaning": "翻译跟原文很贴切。",
+      "explanation": "原文（げんぶん）：文字，原文",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/206594",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "gonnastop"
+      }
+    },
+    {
+      "id": "tatoeba-174970-厳密",
+      "sentence": "___に言うと、トマトは果物です。",
+      "speech": "厳密に言うと、トマトは果物です。",
+      "answers": [
+        "厳密",
+        "げんみつ",
+        "genmitsu"
+      ],
+      "meaning": "严格地讲，番茄是水果。",
+      "explanation": "厳密（げんみつ）：严格、封闭",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/174970",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "Blanka_Meduzo",
+        "translationAuthor": "zhouj1955"
+      }
+    },
+    {
+      "id": "tatoeba-9755625-朝",
+      "sentence": "___の８時です。",
+      "speech": "朝の８時です。",
+      "answers": [
+        "朝",
+        "あさ",
+        "asa"
+      ],
+      "meaning": "現在是早上八時。",
+      "explanation": "朝（あさ）：早晨",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/9755625",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "small_snow",
+        "translationAuthor": "nickyeow"
+      }
+    },
+    {
+      "id": "tatoeba-126219-朝御飯",
+      "sentence": "___ができています。",
+      "speech": "朝御飯ができています。",
+      "answers": [
+        "朝御飯",
+        "あさごはん",
+        "asagohan"
+      ],
+      "meaning": "早饭准备好了。",
+      "explanation": "朝御飯（あさごはん）：早餐",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/126219",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "fucongcong"
+      }
+    },
+    {
+      "id": "tatoeba-10515260-明後日",
+      "sentence": "___には出発します。",
+      "speech": "明後日には出発します。",
+      "answers": [
+        "明後日",
+        "あさって",
+        "asatte"
+      ],
+      "meaning": "我们后天出发。",
+      "explanation": "明後日（あさって）：后天",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/10515260",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "bunbuku",
+        "translationAuthor": "fucongcong"
+      }
+    },
+    {
+      "id": "tatoeba-9489164-明日",
+      "sentence": "___の予定は？",
+      "speech": "明日の予定は？",
+      "answers": [
+        "明日",
+        "あした",
+        "ashita"
+      ],
+      "meaning": "你明天的行程安排是什麼？",
+      "explanation": "明日（あした）：明天",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/9489164",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "small_snow",
+        "translationAuthor": "Martha"
+      }
+    },
+    {
+      "id": "tatoeba-5933519-あそこ",
+      "sentence": "___を見て。",
+      "speech": "あそこを見て。",
+      "answers": [
+        "あそこ",
+        "asoko"
+      ],
+      "meaning": "看那里。",
+      "explanation": "あそこ（あそこ）：那里，那边，那个地方",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/5933519",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "Sethlang",
+        "translationAuthor": "mirrorvan"
+      }
+    },
+    {
+      "id": "tatoeba-174058-遊ぶ",
+      "sentence": "公園で___のはおもしろかった。",
+      "speech": "公園で遊ぶのはおもしろかった。",
+      "answers": [
+        "遊ぶ",
+        "あそぶ",
+        "asobu"
+      ],
+      "meaning": "在公園裡玩很有趣。",
+      "explanation": "遊ぶ（あそぶ）：玩；愉快地度过时光；出去玩",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/174058",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "bunbuku",
+        "translationAuthor": "Martha"
+      }
+    },
+    {
+      "id": "tatoeba-185149-暖かい",
+      "sentence": "懐が___。",
+      "speech": "懐が暖かい。",
+      "answers": [
+        "暖かい",
+        "あたたかい",
+        "atatakai"
+      ],
+      "meaning": "我身上帶著很多錢。",
+      "explanation": "暖かい（あたたかい）：温暖的",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/185149",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "small_snow",
+        "translationAuthor": "Martha"
+      }
+    },
+    {
+      "id": "tatoeba-1325382-頭",
+      "sentence": "___を冷やせ！",
+      "speech": "頭を冷やせ！",
+      "answers": [
+        "頭",
+        "あたま",
+        "atama"
+      ],
+      "meaning": "冷静点。",
+      "explanation": "頭（あたま）：头",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1325382",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "Scott",
+        "translationAuthor": "mirrorvan"
+      }
+    },
+    {
+      "id": "tatoeba-219590-新しい",
+      "sentence": "この本は___。",
+      "speech": "この本は新しい。",
+      "answers": [
+        "新しい",
+        "あたらしい",
+        "atarashii"
+      ],
+      "meaning": "这本书是新的。",
+      "explanation": "新しい（あたらしい）：新的",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/219590",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "fucongcong"
+      }
+    },
+    {
+      "id": "tatoeba-1614515-苦い",
+      "sentence": "レモンは___。",
+      "speech": "レモンは苦い。",
+      "answers": [
+        "苦い",
+        "にがい",
+        "nigai"
+      ],
+      "meaning": "柠檬很酸。",
+      "explanation": "苦い（にがい）：苦的",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1614515",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "Meow",
+        "translationAuthor": "iiujik"
+      }
+    },
+    {
+      "id": "tatoeba-191067-意見",
+      "sentence": "___が一致している。",
+      "speech": "意見が一致している。",
+      "answers": [
+        "意見",
+        "いけん",
+        "iken"
+      ],
+      "meaning": "我们同意。",
+      "explanation": "意見（いけん）：意见、观点、想法",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/191067",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "bunbuku",
+        "translationAuthor": "sysko"
+      }
+    },
+    {
+      "id": "tatoeba-2461810-漫画",
+      "sentence": "この___は知っていますか？",
+      "speech": "この漫画は知っていますか？",
+      "answers": [
+        "漫画",
+        "まんが",
+        "manga"
+      ],
+      "meaning": "你知道这部漫画吗？",
+      "explanation": "漫画（まんが）：漫画（书）、卡通",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/2461810",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "flavio78",
+        "translationAuthor": "tato23bak"
+      }
+    },
+    {
+      "id": "tatoeba-214601-ステレオ",
+      "sentence": "___にレコードをかけてください。",
+      "speech": "ステレオにレコードをかけてください。",
+      "answers": [
+        "ステレオ",
+        "sutereo"
+      ],
+      "meaning": "往立体声音响上放一枚唱片。",
+      "explanation": "ステレオ（ステレオ）：立体声",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/214601",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "mtdot"
+      }
+    },
+    {
+      "id": "tatoeba-110085-医学",
+      "sentence": "彼は___を研究するために渡米した。",
+      "speech": "彼は医学を研究するために渡米した。",
+      "answers": [
+        "医学",
+        "いがく",
+        "igaku"
+      ],
+      "meaning": "他去美国学医了。",
+      "explanation": "医学（いがく）：医学",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/110085",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "fucongcong"
+      }
+    },
+    {
+      "id": "tatoeba-13146442-テキスト",
+      "sentence": "___を開いてください。",
+      "speech": "テキストを開いてください。",
+      "answers": [
+        "テキスト",
+        "tekisuto"
+      ],
+      "meaning": "請翻開課本。",
+      "explanation": "テキスト（テキスト）：文本;教科书",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/13146442",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "atitarev",
+        "translationAuthor": "LeviHighway"
+      }
+    },
+    {
+      "id": "tatoeba-10492580-折る",
+      "sentence": "無駄骨を___だけだ。",
+      "speech": "無駄骨を折るだけだ。",
+      "answers": [
+        "折る",
+        "おる",
+        "oru"
+      ],
+      "meaning": "这好比大海捞针。",
+      "explanation": "折る（おる）：折断，折断；弯曲",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/10492580",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "small_snow",
+        "translationAuthor": "mirrorvan"
+      }
+    },
+    {
+      "id": "tatoeba-347548-聞こえる",
+      "sentence": "モロに___。",
+      "speech": "モロに聞こえる。",
+      "answers": [
+        "聞こえる",
+        "きこえる",
+        "kikoeru"
+      ],
+      "meaning": "能直接听到。",
+      "explanation": "聞こえる（きこえる）：被听到, 被听到",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/347548",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "zhouj1955",
+        "translationAuthor": "zhouj1955"
+      }
+    },
+    {
+      "id": "tatoeba-537048-猿",
+      "sentence": "僕の___が逃げちゃった！",
+      "speech": "僕の猿が逃げちゃった！",
+      "answers": [
+        "猿",
+        "さる",
+        "saru"
+      ],
+      "meaning": "我的猴子逃跑了！",
+      "explanation": "猿（さる）：猴",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/537048",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "tomkun01",
+        "translationAuthor": "tomkun01"
+      }
+    },
+    {
+      "id": "tatoeba-140260-騒ぎ",
+      "sentence": "___の発端は彼の不注意な発言からだった。",
+      "speech": "騒ぎの発端は彼の不注意な発言からだった。",
+      "answers": [
+        "騒ぎ",
+        "さわぎ",
+        "sawagi"
+      ],
+      "meaning": "麻煩的開頭是他草率的評論。",
+      "explanation": "騒ぎ（さわぎ）：骚乱，骚乱",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/140260",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "Martha"
+      }
+    },
+    {
+      "id": "tatoeba-532467-参加",
+      "sentence": "だれでも___できる。",
+      "speech": "だれでも参加できる。",
+      "answers": [
+        "参加",
+        "さんか",
+        "sanka"
+      ],
+      "meaning": "无论谁都可以参加。",
+      "explanation": "参加（さんか）：参与",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/532467",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "Snout",
+        "translationAuthor": "vicch"
+      }
+    },
+    {
+      "id": "tatoeba-229249-参考",
+      "sentence": "イギリスにいる間、私はよくそのガイドブックを___にした。",
+      "speech": "イギリスにいる間、私はよくそのガイドブックを参考にした。",
+      "answers": [
+        "参考",
+        "さんこう",
+        "sankou"
+      ],
+      "meaning": "在英国的时候，我经常看参考书。",
+      "explanation": "参考（さんこう）：参考、咨询",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/229249",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "fucongcong"
+      }
+    },
+    {
+      "id": "tatoeba-5070-賛成",
+      "sentence": "___です。",
+      "speech": "賛成です。",
+      "answers": [
+        "賛成",
+        "さんせい",
+        "sansei"
+      ],
+      "meaning": "我同意。",
+      "explanation": "賛成（さんせい）：批准、同意",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/5070",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "bunbuku",
+        "translationAuthor": "fucongcong"
+      }
+    },
+    {
+      "id": "tatoeba-143750-酸素",
+      "sentence": "水は水素と___を含む。",
+      "speech": "水は水素と酸素を含む。",
+      "answers": [
+        "酸素",
+        "さんそ",
+        "sanso"
+      ],
+      "meaning": "水是由氫和氧組成的。",
+      "explanation": "酸素（さんそ）：氧",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/143750",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "nickyeow"
+      }
+    },
+    {
+      "id": "tatoeba-221711-詩",
+      "sentence": "この___を暗記しましょう。",
+      "speech": "この詩を暗記しましょう。",
+      "answers": [
+        "詩",
+        "し",
+        "shi"
+      ],
+      "meaning": "我們把這首詩背下來吧。",
+      "explanation": "詩（し）：诗;诗",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/221711",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "DaoSeng"
+      }
+    },
+    {
+      "id": "tatoeba-8697810-幸せ",
+      "sentence": "___だった？",
+      "speech": "幸せだった？",
+      "answers": [
+        "幸せ",
+        "しあわせ",
+        "shiawase"
+      ],
+      "meaning": "你开心吗？",
+      "explanation": "幸せ（しあわせ）：幸福、祝福",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/8697810",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "small_snow",
+        "translationAuthor": "crescat"
+      }
+    },
+    {
+      "id": "tatoeba-234842-アクセント",
+      "sentence": "ｇｕｉｔａｒの___は第２音節にある。",
+      "speech": "ｇｕｉｔａｒのアクセントは第２音節にある。",
+      "answers": [
+        "アクセント",
+        "akusento"
+      ],
+      "meaning": "「Guitar」一字的重音在第二音節。",
+      "explanation": "アクセント（アクセント）：口音",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/234842",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "nickyeow"
+      }
+    },
+    {
+      "id": "tatoeba-77902-足跡",
+      "sentence": "猟師は熊の___をたどった。",
+      "speech": "猟師は熊の足跡をたどった。",
+      "answers": [
+        "足跡",
+        "あしあと",
+        "ashiato"
+      ],
+      "meaning": "獵人跟著熊的蹤跡。",
+      "explanation": "足跡（あしあと）：脚印",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/77902",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "mookeee",
+        "translationAuthor": "egg0073"
+      }
+    },
+    {
+      "id": "tatoeba-448969-足元",
+      "sentence": "___に気をつけて。",
+      "speech": "足元に気をつけて。",
+      "answers": [
+        "足元",
+        "あしもと",
+        "ashimoto"
+      ],
+      "meaning": "走路小心。",
+      "explanation": "足元（あしもと）：在某人的脚下",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/448969",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "bunbuku",
+        "translationAuthor": "Martha"
+      }
+    },
+    {
+      "id": "tatoeba-206130-賢明",
+      "sentence": "その老人は___に見えた。",
+      "speech": "その老人は賢明に見えた。",
+      "answers": [
+        "賢明",
+        "けんめい",
+        "kenmei"
+      ],
+      "meaning": "老人看起來明智。",
+      "explanation": "賢明（けんめい）：智慧、聪明、谨慎",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/206130",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "Zifre"
+      }
+    },
+    {
+      "id": "tatoeba-107722-権力",
+      "sentence": "彼は___に屈した。",
+      "speech": "彼は権力に屈した。",
+      "answers": [
+        "権力",
+        "けんりょく",
+        "kenryoku"
+      ],
+      "meaning": "他向权力屈服。",
+      "explanation": "権力（けんりょく）：（政治）权力、权威、影响力",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/107722",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "fucongcong"
+      }
+    },
+    {
+      "id": "tatoeba-174671-言論",
+      "sentence": "___の自由は現在当然のこととされている。",
+      "speech": "言論の自由は現在当然のこととされている。",
+      "answers": [
+        "言論",
+        "げんろん",
+        "genron"
+      ],
+      "meaning": "現在言論自由被當作是理所當然的事。",
+      "explanation": "言論（げんろん）：讨论、演讲",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/174671",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": "mookeee",
+        "translationAuthor": "Martha"
+      }
+    },
+    {
+      "id": "tatoeba-91045-語彙",
+      "sentence": "彼女は英語の___をたくさん知っている。",
+      "speech": "彼女は英語の語彙をたくさん知っている。",
+      "answers": [
+        "語彙",
+        "ごい",
+        "goi"
+      ],
+      "meaning": "她懂得很多英文生字。",
+      "explanation": "語彙（ごい）：词汇表，词汇表",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/91045",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "nickyeow"
+      }
+    },
+    {
+      "id": "tatoeba-173524-甲",
+      "sentence": "___の食物は乙の毒。",
+      "speech": "甲の食物は乙の毒。",
+      "answers": [
+        "甲",
+        "こう",
+        "kou"
+      ],
+      "meaning": "甲之蜜糖，乙之砒霜。",
+      "explanation": "甲（こう）：排名第一；壳",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/173524",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "mirrorvan"
+      }
+    },
+    {
+      "id": "tatoeba-192511-好意",
+      "sentence": "リッチ氏は彼女の___に感謝した。",
+      "speech": "リッチ氏は彼女の好意に感謝した。",
+      "answers": [
+        "好意",
+        "こうい",
+        "koui"
+      ],
+      "meaning": "Rich 先生感謝了她的好意。",
+      "explanation": "好意（こうい）：善意、恩惠、礼貌",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/192511",
+        "license": "CC BY 2.0 FR; translation: CC BY 2.0 FR",
+        "author": null,
+        "translationAuthor": "nickyeow"
+      }
+    },
+    {
+      "id": "tatoeba-graded-3718404-つもり",
+      "sentence": "ごめん、軽い冗談の___だったんだけど。",
+      "speech": "ごめん、軽い冗談のつもりだったんだけど。",
+      "answers": [
+        "つもり",
+        "tsumori"
+      ],
+      "meaning": "不要见怪呀，本来只是打算说一些轻松的笑话的。",
+      "explanation": "つもり（つもり）：intention, plan",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/3718404",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-13936772-しかし",
+      "sentence": "___、それは代物とも呼べない。",
+      "speech": "しかし、それは代物とも呼べない。",
+      "answers": [
+        "しかし",
+        "shikashi"
+      ],
+      "meaning": "然而这也算不上什么像样的东西。",
+      "explanation": "しかし（しかし）：however; but",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/13936772",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-94213-彼女",
+      "sentence": "___の成功は彼女を嫉妬の標的にした。",
+      "speech": "彼女の成功は彼女を嫉妬の標的にした。",
+      "answers": [
+        "彼女",
+        "かのじょ",
+        "kanojo"
+      ],
+      "meaning": "她的成功讓她受盡嫉妒。",
+      "explanation": "彼女（かのじょ）：girlfriend; she",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/94213",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-997770-彼女",
+      "sentence": "___のことが好きだ。",
+      "speech": "彼女のことが好きだ。",
+      "answers": [
+        "彼女",
+        "かのじょ",
+        "kanojo"
+      ],
+      "meaning": "我爱她。",
+      "explanation": "彼女（かのじょ）：girlfriend; she",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/997770",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-165516-ない",
+      "sentence": "私たちは全く共通のところが___。",
+      "speech": "私たちは全く共通のところがない。",
+      "answers": [
+        "ない",
+        "nai"
+      ],
+      "meaning": "我们完全没有共同点。",
+      "explanation": "ない（ない）：there isn't, doesn't have",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/165516",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-670476-世界",
+      "sentence": "___は小さな村である。",
+      "speech": "世界は小さな村である。",
+      "answers": [
+        "世界",
+        "せかい",
+        "sekai"
+      ],
+      "meaning": "世界是一个小村。",
+      "explanation": "世界（せかい）：world",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/670476",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-1151885-電話",
+      "sentence": "___が鳴ったときわたしは風呂に入っていた。",
+      "speech": "電話が鳴ったときわたしは風呂に入っていた。",
+      "answers": [
+        "電話",
+        "でんわ",
+        "denwa"
+      ],
+      "meaning": "電話響的時候，我正在泡澡。",
+      "explanation": "電話（でんわ）：a telephone",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1151885",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-222222-計画",
+      "sentence": "この___が成功するかどうかまだ分からない。",
+      "speech": "この計画が成功するかどうかまだ分からない。",
+      "answers": [
+        "計画",
+        "けいかく",
+        "keikaku"
+      ],
+      "meaning": "还不知道这个计划成不成功。",
+      "explanation": "計画（けいかく）：plan, project, schedule",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/222222",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-375054-食べる",
+      "sentence": "はしで___のは難しいですか。",
+      "speech": "はしで食べるのは難しいですか。",
+      "answers": [
+        "食べる",
+        "たべる",
+        "taberu"
+      ],
+      "meaning": "用筷子吃飯難嗎？",
+      "explanation": "食べる（たべる）：to eat",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/375054",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-91023-英語",
+      "sentence": "彼女は___を教える才能が豊かだ。",
+      "speech": "彼女は英語を教える才能が豊かだ。",
+      "answers": [
+        "英語",
+        "えいご",
+        "eigo"
+      ],
+      "meaning": "她很擅长英语教学。",
+      "explanation": "英語（えいご）：English (language)",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/91023",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-80401-誕生日",
+      "sentence": "明日は僕の___で、１７歳になるんだ。",
+      "speech": "明日は僕の誕生日で、１７歳になるんだ。",
+      "answers": [
+        "誕生日",
+        "たんじょうび",
+        "tanjoubi"
+      ],
+      "meaning": "明天是我的生日，而我將會17歲。",
+      "explanation": "誕生日（たんじょうび）：birthday",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/80401",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-206353-火事",
+      "sentence": "その夜、___が起こった。",
+      "speech": "その夜、火事が起こった。",
+      "answers": [
+        "火事",
+        "かじ",
+        "kaji"
+      ],
+      "meaning": "那天晚上發生了火災。",
+      "explanation": "火事（かじ）：fire",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/206353",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-13540113-エスカレーター",
+      "sentence": "___に乗っている間、手すりを握って黄色い線の中に立っていてください。",
+      "speech": "エスカレーターに乗っている間、手すりを握って黄色い線の中に立っていてください。",
+      "answers": [
+        "エスカレーター",
+        "esukareetaa"
+      ],
+      "meaning": "搭乘手扶梯時，請握住扶手並站在黃色線內。",
+      "explanation": "エスカレーター（エスカレーター）：escalator",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/13540113",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-2734226-バランス",
+      "sentence": "トムは___を崩して転んだ。",
+      "speech": "トムはバランスを崩して転んだ。",
+      "answers": [
+        "バランス",
+        "baransu"
+      ],
+      "meaning": "汤姆失去了平衡摔落下来。",
+      "explanation": "バランス（バランス）：balance",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/2734226",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-10650771-どこ",
+      "sentence": "観光案内所は___ですか？",
+      "speech": "観光案内所はどこですか？",
+      "answers": [
+        "どこ",
+        "doko"
+      ],
+      "meaning": "遊客諮詢處在哪裡?",
+      "explanation": "どこ（どこ）：where, what place",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/10650771",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-155156-ない",
+      "sentence": "私は誰も殺したり傷つけたことは___。",
+      "speech": "私は誰も殺したり傷つけたことはない。",
+      "answers": [
+        "ない",
+        "nai"
+      ],
+      "meaning": "我從沒殺或傷過任何人。",
+      "explanation": "ない（ない）：there isn't, doesn't have",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/155156",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-88470-上手",
+      "sentence": "彼女は針仕事が___だ。",
+      "speech": "彼女は針仕事が上手だ。",
+      "answers": [
+        "上手",
+        "じょうず",
+        "jouzu"
+      ],
+      "meaning": "她擅长针线活。",
+      "explanation": "上手（じょうず）：be good at, skillful",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/88470",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-220571-池",
+      "sentence": "この___には以前蛙がたくさんいたものだった。",
+      "speech": "この池には以前蛙がたくさんいたものだった。",
+      "answers": [
+        "池",
+        "いけ",
+        "ike"
+      ],
+      "meaning": "以前在這個池塘裡有許多青蛙。",
+      "explanation": "池（いけ）：pond",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/220571",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-1241115-笑い",
+      "sentence": "極く常識的に考えて見ても、___のない人生は暗く冷たい。そして不健康であるように思われます。",
+      "speech": "極く常識的に考えて見ても、笑いのない人生は暗く冷たい。そして不健康であるように思われます。",
+      "answers": [
+        "笑い",
+        "わらい",
+        "warai"
+      ],
+      "meaning": "即使你从常识的角度来考虑，没有笑容的人生很冷酷很惨淡。还有的确不健康。",
+      "explanation": "笑い（わらい）：laugh, laughter, smile",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1241115",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-6619675-髪の毛",
+      "sentence": "___を洗っていない。",
+      "speech": "髪の毛を洗っていない。",
+      "answers": [
+        "髪の毛",
+        "かみのけ",
+        "kaminoke"
+      ],
+      "meaning": "我没洗头发。",
+      "explanation": "髪の毛（かみのけ）：hair (head)",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/6619675",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-3360030-遊び",
+      "sentence": "マリーはトムと___に行った。",
+      "speech": "マリーはトムと遊びに行った。",
+      "answers": [
+        "遊び",
+        "あそび",
+        "asobi"
+      ],
+      "meaning": "玛丽去和汤姆玩了。",
+      "explanation": "遊び（あそび）：play",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/3360030",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-13535391-重要",
+      "sentence": "今こそが___な時です。どうかまだあまり頑固に固執せず、臨機応変に対応できないままではいけません。",
+      "speech": "今こそが重要な時です。どうかまだあまり頑固に固執せず、臨機応変に対応できないままではいけません。",
+      "answers": [
+        "重要",
+        "じゅうよう",
+        "juuyou"
+      ],
+      "meaning": "現在正是關鍵的時候了，請不要還那麼死腦筋，絲毫不知權變。",
+      "explanation": "重要（じゅうよう）：important, essential",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/13535391",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-213665-そこ",
+      "sentence": "___に行くことに決めた。",
+      "speech": "そこに行くことに決めた。",
+      "answers": [
+        "そこ",
+        "soko"
+      ],
+      "meaning": "我决定去那里。",
+      "explanation": "そこ（そこ）：that place, there; bottom, sole",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/213665",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-231458-車",
+      "sentence": "お宅まで___でお送りしましょう。",
+      "speech": "お宅まで車でお送りしましょう。",
+      "answers": [
+        "車",
+        "くるま",
+        "kuruma"
+      ],
+      "meaning": "我開車送你回家吧。",
+      "explanation": "車（くるま）：car, vehicle",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/231458",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-997282-ごめんなさい",
+      "sentence": "___。間違ってあなたの郵便物を開けてしまいました。",
+      "speech": "ごめんなさい。間違ってあなたの郵便物を開けてしまいました。",
+      "answers": [
+        "ごめんなさい",
+        "gomennasai"
+      ],
+      "meaning": "对不起，我误拆了你的信。",
+      "explanation": "ごめんなさい（ごめんなさい）：I beg your pardon, excuse me, I'm sorry",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/997282",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-229667-あれ",
+      "sentence": "___は隣に住んでいる男です。",
+      "speech": "あれは隣に住んでいる男です。",
+      "answers": [
+        "あれ",
+        "are"
+      ],
+      "meaning": "那是住在隔壁的男人。",
+      "explanation": "あれ（あれ）：that one (over there)",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/229667",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-233893-前",
+      "sentence": "あなたたち、___に会ったことある？",
+      "speech": "あなたたち、前に会ったことある？",
+      "answers": [
+        "前",
+        "まえ",
+        "mae"
+      ],
+      "meaning": "你们见面了吗？",
+      "explanation": "前（まえ）：before, in front",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/233893",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-203686-英語",
+      "sentence": "たけしは___で日記をつけている。",
+      "speech": "たけしは英語で日記をつけている。",
+      "answers": [
+        "英語",
+        "えいご",
+        "eigo"
+      ],
+      "meaning": "Takesi在用英语写日记。",
+      "explanation": "英語（えいご）：English (language)",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/203686",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-203944-人",
+      "sentence": "たいていの___がそう考える。",
+      "speech": "たいていの人がそう考える。",
+      "answers": [
+        "人",
+        "ひと",
+        "hito"
+      ],
+      "meaning": "大部分的人是這麼想的。",
+      "explanation": "人（ひと）：man, person",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/203944",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-82219-見る",
+      "sentence": "僕の姿を___と、彼らは急に話をやめた。",
+      "speech": "僕の姿を見ると、彼らは急に話をやめた。",
+      "answers": [
+        "見る",
+        "みる",
+        "miru"
+      ],
+      "meaning": "他们看到我就突然停止了说话。",
+      "explanation": "見る（みる）：to see, to look",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/82219",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-9837997-スープ",
+      "sentence": "この___、しょっぱくて飲めないよ。",
+      "speech": "このスープ、しょっぱくて飲めないよ。",
+      "answers": [
+        "スープ",
+        "suupu"
+      ],
+      "meaning": "這碗湯大鹹了，喝不下。",
+      "explanation": "スープ（スープ）：(Western) soup",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/9837997",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-141616-先生",
+      "sentence": "___は私たちに宿題を出した。",
+      "speech": "先生は私たちに宿題を出した。",
+      "answers": [
+        "先生",
+        "せんせい",
+        "sensei"
+      ],
+      "meaning": "老师给我们布置了家庭作业。",
+      "explanation": "先生（せんせい）：teacher, professor; master; doctor",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/141616",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-102966-区別",
+      "sentence": "彼は善と悪の___がわからない。",
+      "speech": "彼は善と悪の区別がわからない。",
+      "answers": [
+        "区別",
+        "くべつ",
+        "kubetsu"
+      ],
+      "meaning": "他好坏不分。",
+      "explanation": "区別（くべつ）：distinction, differentiation, classification",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/102966",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-120887-彼",
+      "sentence": "___がその全責任を負った。",
+      "speech": "彼がその全責任を負った。",
+      "answers": [
+        "彼",
+        "かれ",
+        "kare"
+      ],
+      "meaning": "他負了全部責任。",
+      "explanation": "彼（かれ）：he, boyfriend",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/120887",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-101944-彼",
+      "sentence": "___は典型的な日本人だ。",
+      "speech": "彼は典型的な日本人だ。",
+      "answers": [
+        "彼",
+        "かれ",
+        "kare"
+      ],
+      "meaning": "他是典型的日本人。",
+      "explanation": "彼（かれ）：he, boyfriend",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/101944",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-77113-腕",
+      "sentence": "___を放してくれ。",
+      "speech": "腕を放してくれ。",
+      "answers": [
+        "腕",
+        "うで",
+        "ude"
+      ],
+      "meaning": "放開我的手臂。",
+      "explanation": "腕（うで）：arm (in reference to body)",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/77113",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-770362-綺麗",
+      "sentence": "彼女はとても___な人です。",
+      "speech": "彼女はとても綺麗な人です。",
+      "answers": [
+        "綺麗",
+        "きれい",
+        "kirei"
+      ],
+      "meaning": "她十分漂亮。",
+      "explanation": "綺麗（きれい）：pretty, clean, tidy",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/770362",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-137532-大使",
+      "sentence": "___はワルシャワから召還された。",
+      "speech": "大使はワルシャワから召還された。",
+      "answers": [
+        "大使",
+        "たいし",
+        "taishi"
+      ],
+      "meaning": "大使被从华沙召回。",
+      "explanation": "大使（たいし）：ambassador",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/137532",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-107197-今",
+      "sentence": "彼は___でも時折訪ねてくる。",
+      "speech": "彼は今でも時折訪ねてくる。",
+      "answers": [
+        "今",
+        "いま",
+        "ima"
+      ],
+      "meaning": "他仍然时不时来看我。",
+      "explanation": "今（いま）：now",
+      "level": "N5",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/107197",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-196161-髪",
+      "sentence": "ほとんどすべての日本人が___が黒い。",
+      "speech": "ほとんどすべての日本人が髪が黒い。",
+      "answers": [
+        "髪",
+        "かみ",
+        "kami"
+      ],
+      "meaning": "几乎所有的日本人头发都是黑色的。",
+      "explanation": "髪（かみ）：hair",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/196161",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-170054-試験",
+      "sentence": "昨日のバーバラの運転免許の___はどうでしたか。",
+      "speech": "昨日のバーバラの運転免許の試験はどうでしたか。",
+      "answers": [
+        "試験",
+        "しけん",
+        "shiken"
+      ],
+      "meaning": "芭芭拉昨天考駕照考得怎樣？",
+      "explanation": "試験（しけん）：an exam",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/170054",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-203080-ダンス",
+      "sentence": "___に行っている間、私の母が赤ん坊の面倒を見てくれます。",
+      "speech": "ダンスに行っている間、私の母が赤ん坊の面倒を見てくれます。",
+      "answers": [
+        "ダンス",
+        "dansu"
+      ],
+      "meaning": "我去參加舞會，母親就幫忙照顧嬰兒。",
+      "explanation": "ダンス（ダンス）：dance",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/203080",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-163530-彼ら",
+      "sentence": "私の姿を見ると、___は急に話をやめた。",
+      "speech": "私の姿を見ると、彼らは急に話をやめた。",
+      "answers": [
+        "彼ら",
+        "かれら",
+        "karera"
+      ],
+      "meaning": "他们看到我就突然停止了说话。",
+      "explanation": "彼ら（かれら）：they (usually male)",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/163530",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-188750-火",
+      "sentence": "煙草の___を消すのを忘れないでください。",
+      "speech": "煙草の火を消すのを忘れないでください。",
+      "answers": [
+        "火",
+        "ひ",
+        "hi"
+      ],
+      "meaning": "别忘了把香烟熄掉。",
+      "explanation": "火（ひ）：fire",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/188750",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-125775-巣",
+      "sentence": "鳥は木に___を作る。",
+      "speech": "鳥は木に巣を作る。",
+      "answers": [
+        "巣",
+        "す",
+        "su"
+      ],
+      "meaning": "鸟儿在树里筑巢。",
+      "explanation": "巣（す）：nest, breeding place",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/125775",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-236885-昼食",
+      "sentence": "___をとってから彼は出かけた。",
+      "speech": "昼食をとってから彼は出かけた。",
+      "answers": [
+        "昼食",
+        "ちゅうしょく",
+        "chuushoku"
+      ],
+      "meaning": "他吃过午餐就出去了。",
+      "explanation": "昼食（ちゅうしょく）：lunch (same as 昼ご飯 (ひるごはん))",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/236885",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-467414-記事",
+      "sentence": "あなたはこの___を読みましたか。",
+      "speech": "あなたはこの記事を読みましたか。",
+      "answers": [
+        "記事",
+        "きじ",
+        "kiji"
+      ],
+      "meaning": "你有沒有看過這篇文章？",
+      "explanation": "記事（きじ）：article, news story",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/467414",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-80731-明かり",
+      "sentence": "___を消しなさい。",
+      "speech": "明かりを消しなさい。",
+      "answers": [
+        "明かり",
+        "あかり",
+        "akari"
+      ],
+      "meaning": "熄灯。",
+      "explanation": "明かり（あかり）：lamplight, light (in general)",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/80731",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-629344-ふざける",
+      "sentence": "___な！",
+      "speech": "ふざけるな！",
+      "answers": [
+        "ふざける",
+        "fuzakeru"
+      ],
+      "meaning": "少來了！",
+      "explanation": "ふざける（ふざける）：to romp, to gambol, to frolic",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/629344",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-90721-確か",
+      "sentence": "彼女は___にかわいいが、しかし私は好きではない。",
+      "speech": "彼女は確かにかわいいが、しかし私は好きではない。",
+      "answers": [
+        "確か",
+        "たしか",
+        "tashika"
+      ],
+      "meaning": "她倒很可爱，但我不喜欢她。",
+      "explanation": "確か（たしか）：if I remember correctly; certain, definite",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/90721",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-1270753-男性",
+      "sentence": "あの___が隣に住んでいる人です。",
+      "speech": "あの男性が隣に住んでいる人です。",
+      "answers": [
+        "男性",
+        "だんせい",
+        "dansei"
+      ],
+      "meaning": "那是住在隔壁的男人。",
+      "explanation": "男性（だんせい）：man; male",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1270753",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-995178-見通し",
+      "sentence": "俺のとびきりのアイデアをこき下ろすのはやめてくれ。___が甘いとかそんなことないよ。",
+      "speech": "俺のとびきりのアイデアをこき下ろすのはやめてくれ。見通しが甘いとかそんなことないよ。",
+      "answers": [
+        "見通し",
+        "みとおし",
+        "mitooshi"
+      ],
+      "meaning": "別貶低我的絕妙點子，我的想法沒有那麼不切實際。",
+      "explanation": "見通し（みとおし）：perspective, unobstructed view, prospect",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/995178",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-1067121-赤ちゃん",
+      "sentence": "ダンスに行ってる間、母が___を見てくれます。",
+      "speech": "ダンスに行ってる間、母が赤ちゃんを見てくれます。",
+      "answers": [
+        "赤ちゃん",
+        "あかちゃん",
+        "akachan"
+      ],
+      "meaning": "我去參加舞會，母親就幫忙照顧嬰兒。",
+      "explanation": "赤ちゃん（あかちゃん）：baby, infant",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1067121",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-11093746-世話",
+      "sentence": "留守中の犬の___、よろしくお願いします。",
+      "speech": "留守中の犬の世話、よろしくお願いします。",
+      "answers": [
+        "世話",
+        "せわ",
+        "sewa"
+      ],
+      "meaning": "麻烦在我离开的时候帮忙照顾我的狗。",
+      "explanation": "世話（せわ）：looking after; to look after",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/11093746",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-93939-涙",
+      "sentence": "彼女の頬には___が流れていた。",
+      "speech": "彼女の頬には涙が流れていた。",
+      "answers": [
+        "涙",
+        "なみだ",
+        "namida"
+      ],
+      "meaning": "眼泪顺着她的脸颊流下来。",
+      "explanation": "涙（なみだ）：tear",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/93939",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-176888-君",
+      "sentence": "___は僕と同じ背の高さです。",
+      "speech": "君は僕と同じ背の高さです。",
+      "answers": [
+        "君",
+        "きみ",
+        "kimi"
+      ],
+      "meaning": "你和我一样高。",
+      "explanation": "君（きみ）：you (informal for men)",
+      "level": "N4",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/176888",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-197625-ピクニック",
+      "sentence": "___に出かけよう。",
+      "speech": "ピクニックに出かけよう。",
+      "answers": [
+        "ピクニック",
+        "pikunikku"
+      ],
+      "meaning": "讓我們去野餐。",
+      "explanation": "ピクニック（ピクニック）：picnic",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/197625",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-4991-記事",
+      "sentence": "失礼だが、上記の___にある３つの誤りを指摘しておきたい。",
+      "speech": "失礼だが、上記の記事にある３つの誤りを指摘しておきたい。",
+      "answers": [
+        "記事",
+        "きじ",
+        "kiji"
+      ],
+      "meaning": "不好意思，讓我指出先前文章的三個錯誤。",
+      "explanation": "記事（きじ）：article, news story",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/4991",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-347263-磁石",
+      "sentence": "一円玉を水に浮かせ、そこに___をゆっくり近づけると、一円玉は磁石に近づく。",
+      "speech": "一円玉を水に浮かせ、そこに磁石をゆっくり近づけると、一円玉は磁石に近づく。",
+      "answers": [
+        "磁石",
+        "じしゃく",
+        "jishaku"
+      ],
+      "meaning": "把一日元硬币浮在水上，将磁石慢慢向其靠近，于是一日元硬币向磁石靠近。",
+      "explanation": "磁石（じしゃく）：magnet",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/347263",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-13537665-理解",
+      "sentence": "___できないところもある。",
+      "speech": "理解できないところもある。",
+      "answers": [
+        "理解",
+        "りかい",
+        "rikai"
+      ],
+      "meaning": "有些地方我無法理解。",
+      "explanation": "理解（りかい）：understanding, comprehension",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/13537665",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-126981-地球",
+      "sentence": "___の表面の４分の３は水です。",
+      "speech": "地球の表面の４分の３は水です。",
+      "answers": [
+        "地球",
+        "ちきゅう",
+        "chikyuu"
+      ],
+      "meaning": "地球表面的四分之三是水。",
+      "explanation": "地球（ちきゅう）：the earth",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/126981",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-3465863-自慢",
+      "sentence": "ジョンは新しい家をとても___に思っている。",
+      "speech": "ジョンは新しい家をとても自慢に思っている。",
+      "answers": [
+        "自慢",
+        "じまん",
+        "jiman"
+      ],
+      "meaning": "约翰对他的新房子很自豪。",
+      "explanation": "自慢（じまん）：pride, boast",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/3465863",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-122253-勤勉",
+      "sentence": "日本人は___な国民だ。",
+      "speech": "日本人は勤勉な国民だ。",
+      "answers": [
+        "勤勉",
+        "きんべん",
+        "kinben"
+      ],
+      "meaning": "日本人是勤奋的国民。",
+      "explanation": "勤勉（きんべん）：industry, diligence",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/122253",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-92695-ストレス",
+      "sentence": "彼女は___に対処できない。",
+      "speech": "彼女はストレスに対処できない。",
+      "answers": [
+        "ストレス",
+        "sutoresu"
+      ],
+      "meaning": "她無法應付壓力。",
+      "explanation": "ストレス（ストレス）：stress",
+      "level": "N3",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/92695",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-202422-足跡",
+      "sentence": "テーブルに猫の___が付いている。",
+      "speech": "テーブルに猫の足跡が付いている。",
+      "answers": [
+        "足跡",
+        "あしあと",
+        "ashiato"
+      ],
+      "meaning": "桌子上有猫爪印。",
+      "explanation": "足跡（あしあと）：footprint",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/202422",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-144970-真相",
+      "sentence": "___は井戸の底にあり探りにくい。",
+      "speech": "真相は井戸の底にあり探りにくい。",
+      "answers": [
+        "真相",
+        "しんそう",
+        "shinsou"
+      ],
+      "meaning": "在井底很難找到真理。",
+      "explanation": "真相（しんそう）：truth, real situation",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/144970",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-123855-回転",
+      "sentence": "頭の___が早い彼女には、何を言っても当意即妙の答えが返ってくる。",
+      "speech": "頭の回転が早い彼女には、何を言っても当意即妙の答えが返ってくる。",
+      "answers": [
+        "回転",
+        "かいてん",
+        "kaiten"
+      ],
+      "meaning": "她的腦筋轉得很快，無論你對她說些什麼，她總能巧妙地作出反駁。",
+      "explanation": "回転（かいてん）：rotation, turning",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/123855",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-13795155-規模",
+      "sentence": "番組制作チームはこのバラエティ収録のために3か月を費やして準備し、その___は年越し特番にも匹敵する。",
+      "speech": "番組制作チームはこのバラエティ収録のために3か月を費やして準備し、その規模は年越し特番にも匹敵する。",
+      "answers": [
+        "規模",
+        "きぼ",
+        "kibo"
+      ],
+      "meaning": "節目組花了三個月籌備這場綜藝錄製，規模堪比跨年晚會。",
+      "explanation": "規模（きぼ）：scale, scope, plan, structure",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/13795155",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-4760186-青春",
+      "sentence": "花ならつぼみの私の人生、この___の始まりを、悔しいのないように大切にしたい。",
+      "speech": "花ならつぼみの私の人生、この青春の始まりを、悔しいのないように大切にしたい。",
+      "answers": [
+        "青春",
+        "せいしゅん",
+        "seishun"
+      ],
+      "meaning": "我的人生正如未开的花蕾。想在这青春的开始，不留下后悔好好珍惜。",
+      "explanation": "青春（せいしゅん）：youth, springtime of life, adolescent",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/4760186",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-189095-なおさら",
+      "sentence": "英語は話せません。スペイン語は___できません。",
+      "speech": "英語は話せません。スペイン語はなおさらできません。",
+      "answers": [
+        "なおさら",
+        "naosara"
+      ],
+      "meaning": "我不會講英語，更不會講西班牙語。",
+      "explanation": "なおさら（なおさら）：all the more, still less",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/189095",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-137256-日にち",
+      "sentence": "大変申し訳ありませんが、個人的事情のためミーティングの___を３月６日に変更させて下さい。",
+      "speech": "大変申し訳ありませんが、個人的事情のためミーティングの日にちを３月６日に変更させて下さい。",
+      "answers": [
+        "日にち",
+        "ひにち",
+        "hinichi"
+      ],
+      "meaning": "真的很對不起，因為一些私人的理由，我想請你把見面日期改為三月六日。",
+      "explanation": "日にち（ひにち）：date (of a planned event, act, etc.), day",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/137256",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-1590706-形容詞",
+      "sentence": "これらの___は全部が積極的です。",
+      "speech": "これらの形容詞は全部が積極的です。",
+      "answers": [
+        "形容詞",
+        "けいようし",
+        "keiyoushi"
+      ],
+      "meaning": "这些形容词都是积极的。",
+      "explanation": "形容詞（けいようし）：adjective",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1590706",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-459037-討論",
+      "sentence": "大学における演習とは、少人数の学生が教員指導の下に研究発表、___を行うゼミナールのことを言います。",
+      "speech": "大学における演習とは、少人数の学生が教員指導の下に研究発表、討論を行うゼミナールのことを言います。",
+      "answers": [
+        "討論",
+        "とうろん",
+        "touron"
+      ],
+      "meaning": "大學中的演習，是指少數學生在教師指導下，進行研究發表、討論的研討課。",
+      "explanation": "討論（とうろん）：discussion; debate",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/459037",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-11007652-ジャンパー",
+      "sentence": "おしゃれとは縁がなく、ジーパンにティーシャツ、___といった格好で、駅まで自転車を走らせる。",
+      "speech": "おしゃれとは縁がなく、ジーパンにティーシャツ、ジャンパーといった格好で、駅まで自転車を走らせる。",
+      "answers": [
+        "ジャンパー",
+        "janpaa"
+      ],
+      "meaning": "他穿得毫不講究，牛仔褲、T 恤、外套，打扮成這樣就騎著自行車去車站了。",
+      "explanation": "ジャンパー（ジャンパー）：jacket, jumper",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/11007652",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-11469096-知り合い",
+      "sentence": "最初にここに越してきたとき、ボストンには___が誰もいなかったんだ。",
+      "speech": "最初にここに越してきたとき、ボストンには知り合いが誰もいなかったんだ。",
+      "answers": [
+        "知り合い",
+        "しりあい",
+        "shiriai"
+      ],
+      "meaning": "一開始搬來這裡的時候，我在波士頓沒有認識的人。",
+      "explanation": "知り合い（しりあい）：acquaintance",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/11469096",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-165420-知り合い",
+      "sentence": "私たちは長年の___です。",
+      "speech": "私たちは長年の知り合いです。",
+      "answers": [
+        "知り合い",
+        "しりあい",
+        "shiriai"
+      ],
+      "meaning": "我们认识有好些年了。",
+      "explanation": "知り合い（しりあい）：acquaintance",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/165420",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-237262-事業",
+      "sentence": "ニューヨークでの彼の___は大成功であった。",
+      "speech": "ニューヨークでの彼の事業は大成功であった。",
+      "answers": [
+        "事業",
+        "じぎょう",
+        "jigyou"
+      ],
+      "meaning": "他在紐約的事業十分成功。",
+      "explanation": "事業（じぎょう）：project, enterprise, business",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/237262",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-226127-カロリー",
+      "sentence": "___の高い食物は私の健康にはよくない。",
+      "speech": "カロリーの高い食物は私の健康にはよくない。",
+      "answers": [
+        "カロリー",
+        "karorii"
+      ],
+      "meaning": "高卡路里的食物對我的身體不好。",
+      "explanation": "カロリー（カロリー）：calorie",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/226127",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-13795165-食器",
+      "sentence": "どこに___があるの？",
+      "speech": "どこに食器があるの？",
+      "answers": [
+        "食器",
+        "しょっき",
+        "shokki"
+      ],
+      "meaning": "哪裡有餐具啊？",
+      "explanation": "食器（しょっき）：tableware",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/13795165",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-220778-経度",
+      "sentence": "この線は___を表している。",
+      "speech": "この線は経度を表している。",
+      "answers": [
+        "経度",
+        "けいど",
+        "keido"
+      ],
+      "meaning": "這條線代表經度。",
+      "explanation": "経度（けいど）：longitude",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/220778",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-10764025-怪獣",
+      "sentence": "トムが、ベッドの下に___がいるって言ってたよ。",
+      "speech": "トムが、ベッドの下に怪獣がいるって言ってたよ。",
+      "answers": [
+        "怪獣",
+        "かいじゅう",
+        "kaijuu"
+      ],
+      "meaning": "湯姆說過，床底下有怪獸喔。",
+      "explanation": "怪獣（かいじゅう）：monster",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/10764025",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-1240970-自宅",
+      "sentence": "これは年来の習慣でしょうが、わたしは___にいる場合、飯を食うときのほかは机の前を離れたことは殆どありません。",
+      "speech": "これは年来の習慣でしょうが、わたしは自宅にいる場合、飯を食うときのほかは机の前を離れたことは殆どありません。",
+      "answers": [
+        "自宅",
+        "じたく",
+        "jitaku"
+      ],
+      "meaning": "这是我数年的习惯了，在家里除了吃饭以外我很少离开我的桌子。",
+      "explanation": "自宅（じたく）：one's own home (same as 自分の家 (じぶんのいえ))",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1240970",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-1160482-無限",
+      "sentence": "宇宙は___だ。",
+      "speech": "宇宙は無限だ。",
+      "answers": [
+        "無限",
+        "むげん",
+        "mugen"
+      ],
+      "meaning": "宇宙浩瀚無邊。",
+      "explanation": "無限（むげん）：infinite",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1160482",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-105787-助言",
+      "sentence": "彼は私の___に従って行動した。",
+      "speech": "彼は私の助言に従って行動した。",
+      "answers": [
+        "助言",
+        "じょげん",
+        "jogen"
+      ],
+      "meaning": "他按照我的建议行事。",
+      "explanation": "助言（じょげん）：advice, suggestion",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/105787",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-13542221-ロープ",
+      "sentence": "一朝蛇に噛まれ、十年は___を恐れていた。",
+      "speech": "一朝蛇に噛まれ、十年はロープを恐れていた。",
+      "answers": [
+        "ロープ",
+        "roopu"
+      ],
+      "meaning": "一朝被蛇咬，十年怕井绳。",
+      "explanation": "ロープ（ロープ）：rope",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/13542221",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-2756962-祝日",
+      "sentence": "日本では春分の日と秋分の日は国民の___だが、夏至と冬至は祝日ではない。",
+      "speech": "日本では春分の日と秋分の日は国民の祝日だが、夏至と冬至は祝日ではない。",
+      "answers": [
+        "祝日",
+        "しゅくじつ",
+        "shukujitsu"
+      ],
+      "meaning": "日本的春分和秋分都是國定假日，但夏至和冬至則不是假日。",
+      "explanation": "祝日（しゅくじつ）：national holiday",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/2756962",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-97530-一連",
+      "sentence": "彼らは___の音楽会を開催した。",
+      "speech": "彼らは一連の音楽会を開催した。",
+      "answers": [
+        "一連",
+        "いちれん",
+        "ichiren"
+      ],
+      "meaning": "他們辦了一系列的音樂會。",
+      "explanation": "一連（いちれん）：a series, a chain, a ream (of paper)",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/97530",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-1218430-熱意",
+      "sentence": "___は移る。",
+      "speech": "熱意は移る。",
+      "answers": [
+        "熱意",
+        "ねつい",
+        "netsui"
+      ],
+      "meaning": "热情具有传染性。",
+      "explanation": "熱意（ねつい）：zeal, enthusiasm",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1218430",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-199860-プラットホーム",
+      "sentence": "トムは地下鉄ウェストミンスター駅の___に立っていた。",
+      "speech": "トムは地下鉄ウェストミンスター駅のプラットホームに立っていた。",
+      "answers": [
+        "プラットホーム",
+        "purattohoomu"
+      ],
+      "meaning": "汤姆站在威斯敏斯特地铁站的站台上。",
+      "explanation": "プラットホーム（プラットホーム）：platform",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/199860",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-199356-植民地",
+      "sentence": "ナイジェリアはかつてイギリスの___であった。",
+      "speech": "ナイジェリアはかつてイギリスの植民地であった。",
+      "answers": [
+        "植民地",
+        "しょくみんち",
+        "shokuminchi"
+      ],
+      "meaning": "尼日利亞曾經是英國的殖民地。",
+      "explanation": "植民地（しょくみんち）：colony",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/199356",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-197200-未開",
+      "sentence": "フォークやはしを使う人々は、しばしばフォークやはしを使わない人々のことを___だと考える。",
+      "speech": "フォークやはしを使う人々は、しばしばフォークやはしを使わない人々のことを未開だと考える。",
+      "answers": [
+        "未開",
+        "みかい",
+        "mikai"
+      ],
+      "meaning": "用叉子和筷子的人经常觉得不用叉子和筷子的人不文明。",
+      "explanation": "未開（みかい）：savage land, backward region, uncivilized",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/197200",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-13541095-火星",
+      "sentence": "人類は___で生きることはできません。",
+      "speech": "人類は火星で生きることはできません。",
+      "answers": [
+        "火星",
+        "かせい",
+        "kasei"
+      ],
+      "meaning": "人类不能在火星上生存。",
+      "explanation": "火星（かせい）：Mars",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/13541095",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-180209-不可欠",
+      "sentence": "教師にとって忍耐力は___だ。",
+      "speech": "教師にとって忍耐力は不可欠だ。",
+      "answers": [
+        "不可欠",
+        "ふかけつ",
+        "fukaketsu"
+      ],
+      "meaning": "耐心对一个教师来说是必需的。",
+      "explanation": "不可欠（ふかけつ）：indispensable, essential",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/180209",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-163074-勤勉",
+      "sentence": "私の知っている限りでは彼は___な学生だ。",
+      "speech": "私の知っている限りでは彼は勤勉な学生だ。",
+      "answers": [
+        "勤勉",
+        "きんべん",
+        "kinben"
+      ],
+      "meaning": "就我所知，他是个很用功的学生。",
+      "explanation": "勤勉（きんべん）：industry, diligence",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/163074",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-3464976-温泉",
+      "sentence": "日本には___がたくさんある。",
+      "speech": "日本には温泉がたくさんある。",
+      "answers": [
+        "温泉",
+        "おんせん",
+        "onsen"
+      ],
+      "meaning": "日本有很多温泉。",
+      "explanation": "温泉（おんせん）：spa, hot spring",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/3464976",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-228377-神聖",
+      "sentence": "インドでは牛は___な動物です。",
+      "speech": "インドでは牛は神聖な動物です。",
+      "answers": [
+        "神聖",
+        "しんせい",
+        "shinsei"
+      ],
+      "meaning": "在印度，牛是一種神聖的動物。",
+      "explanation": "神聖（しんせい）：holiness, sacredness, dignity",
+      "level": "N1",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/228377",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-1906087-お願いします",
+      "sentence": "コーヒーを___。",
+      "speech": "コーヒーをお願いします。",
+      "answers": [
+        "お願いします",
+        "おねがいします",
+        "onegaishimasu"
+      ],
+      "meaning": "我要咖啡，谢谢。",
+      "explanation": "お願いします（おねがいします）：Please (lit., I request)",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/1906087",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-93114-叔母",
+      "sentence": "彼女は___に似ている。",
+      "speech": "彼女は叔母に似ている。",
+      "answers": [
+        "叔母",
+        "おば",
+        "oba"
+      ],
+      "meaning": "她长得像她姑姑。",
+      "explanation": "叔母（おば）：aunt (younger than one's parent)",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/93114",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-206717-牧場",
+      "sentence": "その___は１０エーカーの広さだ。",
+      "speech": "その牧場は１０エーカーの広さだ。",
+      "answers": [
+        "牧場",
+        "ぼくじょう",
+        "bokujou"
+      ],
+      "meaning": "牧场的面积有10英亩。",
+      "explanation": "牧場（ぼくじょう）：farm (livestock); pasture land",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/206717",
+        "license": "CC BY 2.0 FR"
+      }
+    },
+    {
+      "id": "tatoeba-graded-125567-お願いします",
+      "sentence": "通路側を___。",
+      "speech": "通路側をお願いします。",
+      "answers": [
+        "お願いします",
+        "おねがいします",
+        "onegaishimasu"
+      ],
+      "meaning": "麻煩給我走道邊的位置。",
+      "explanation": "お願いします（おねがいします）：Please (lit., I request)",
+      "level": "N2",
+      "source": {
+        "name": "Tatoeba",
+        "url": "https://tatoeba.org/en/sentences/show/125567",
+        "license": "CC BY 2.0 FR"
+      }
+    }
+  ]
+}

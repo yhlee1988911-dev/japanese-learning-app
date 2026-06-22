@@ -1,0 +1,61 @@
+.review-page .action-row--space-between {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.review-page .action-row--space-between .ghost-button {
+  background: transparent;
+  border: 1px solid rgba(23, 33, 31, 0.2);
+  color: #44514d;
+  font-size: 14px;
+  min-height: 44px;
+  padding: 0 14px;
+}
+
+.review-page .action-row--space-between .ghost-button:hover {
+  background: rgba(23, 33, 31, 0.06);
+}
+
+.review-page .question-source {
+  color: inherit;
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  margin: -12px 0 16px;
+  opacity: 0.72;
+}
+
+@media (max-width: 760px) {
+  .review-page .action-row--space-between {
+    flex-direction: column;
+  }
+
+  .review-page .action-row--space-between .ghost-button {
+    order: 1;
+  }
+}
+
+/* ===== 手机端专用适配 (≤480px) ===== */
+@media (max-width: 480px) {
+  .review-page .action-row--space-between {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .review-page .action-row--space-between .ghost-button {
+    order: 1;
+    width: 100%;
+    min-height: 44px;
+    font-size: 14px;
+  }
+
+  .review-page .action-row--space-between .primary-button {
+    width: 100%;
+  }
+
+  .review-page .question-source {
+    font-size: 11px;
+    margin: -8px 0 12px;
+  }
+}

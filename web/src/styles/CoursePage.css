@@ -1,0 +1,29 @@
+/* ===== 手机端专用适配 (≤480px) ===== */
+@media (max-width: 480px) {
+  .course-page {
+    padding: 12px !important;
+  }
+
+  .course-page h1 {
+    font-size: 22px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .course-page .back-btn {
+    min-height: 40px;
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .course-page .lesson-card {
+    padding: 12px !important;
+  }
+
+  .course-page .lesson-card h3 {
+    font-size: 16px !important;
+  }
+
+  .course-page .lesson-card p {
+    font-size: 13px !important;
+  }
+}

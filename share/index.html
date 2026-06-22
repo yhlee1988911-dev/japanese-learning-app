@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="日本語学習">
+  <meta name="format-detection" content="telephone=no">
+  <title>日本語学習 - 日语词汇记忆训练</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans CJK SC', sans-serif;
+      background: linear-gradient(135deg, #f6f3ed 0%, #e8e0d5 100%);
+      min-height: 100vh;
+      min-height: -webkit-fill-available;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 48px 32px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+      text-align: center;
+    }
+
+    /* iPhone 小屏适配 */
+    @media (max-width: 380px) {
+      .card {
+        padding: 32px 20px;
+        border-radius: 20px;
+      }
+    }
+
+    /* iPad 大屏适配 */
+    @media (min-width: 768px) {
+      body {
+        padding: 40px;
+      }
+      .card {
+        max-width: 520px;
+        padding: 60px 48px;
+        border-radius: 32px;
+      }
+    }
+
+    /* 横屏适配 */
+    @media (orientation: landscape) and (max-height: 500px) {
+      body {
+        align-items: flex-start;
+        padding-top: 20px;
+      }
+      .card {
+        padding: 24px 20px;
+      }
+    }
+
+    .icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 24px;
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      .icon {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 28px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .icon {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 16px;
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 34px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    @media (min-width: 768px) {
+      .subtitle {
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .url-box {
+      background: #f8f6f3;
+      border: 2px dashed #d4cdc0;
+      border-radius: 16px;
+      padding: 20px 16px;
+      margin-bottom: 24px;
+      word-break: break-all;
+    }
+
+    @media (min-width: 768px) {
+      .url-box {
+        padding: 24px 20px;
+        border-radius: 20px;
+      }
+    }
+
+    .url-label {
+      font-size: 12px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .url {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2db78d;
+      text-decoration: none;
+      display: block;
+      line-height: 1.4;
+    }
+
+    @media (min-width: 768px) {
+      .url {
+        font-size: 20px;
+      }
+    }
+
+    .url:active {
+      opacity: 0.7;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #2db78d;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 16px 36px;
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      width: 100%;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .btn:hover {
+      background: #259e78;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+      background: #1f8a6a;
+    }
+
+    @media (min-width: 768px) {
+      .btn {
+        padding: 18px 40px;
+        font-size: 18px;
+        border-radius: 14px;
+      }
+    }
+
+    .btn-icon {
+      font-size: 20px;
+    }
+
+    .tips {
+      margin-top: 24px;
+      padding: 16px;
+      background: #fff8e6;
+      border-radius: 12px;
+      text-align: left;
+    }
+
+    @media (min-width: 768px) {
+      .tips {
+        padding: 20px;
+        border-radius: 16px;
+        margin-top: 28px;
+      }
+    }
+
+    .tips-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #b8860b;
+      margin-bottom: 8px;
+    }
+
+    .tips-list {
+      font-size: 13px;
+      color: #8b7355;
+      line-height: 1.8;
+      padding-left: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .tips-list {
+        font-size: 14px;
+        line-height: 2;
+      }
+    }
+
+    .tips-list li {
+      margin-bottom: 2px;
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 12px;
+      color: #bbb;
+    }
+
+    @media (min-width: 768px) {
+      .footer {
+        margin-top: 28px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#2db78d"/>
+          <stop offset="100%" style="stop-color:#1a8a6a"/>
+        </linearGradient>
+      </defs>
+      <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+      <text x="256" y="300" font-family="serif" font-size="280" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="central">語</text>
+      <rect x="120" y="380" width="272" height="6" rx="3" fill="rgba(255,255,255,0.6)"/>
+      <text x="256" y="430" font-family="sans-serif" font-size="48" font-weight="bold" fill="rgba(255,255,255,0.7)" text-anchor="middle">N5-N1</text>
+    </svg>
+
+    <h1>日本語学習</h1>
+    <p class="subtitle">日语词汇记忆训练 · 支持 JLPT N5-N1</p>
+
+    <div class="url-box">
+      <div class="url-label">📱 扫码或浏览器访问</div>
+      <a class="url" href="http://192.168.31.120:3000" target="_blank">http://192.168.31.120:3000</a>
+    </div>
+
+    <a class="btn" href="http://192.168.31.120:3000" target="_blank">
+      <span class="btn-icon">🚀</span>
+      立即打开
+    </a>
+
+    <div class="tips">
+      <div class="tips-title">💡 使用提示</div>
+      <ol class="tips-list">
+        <li>确保手机/平板与电脑连接<strong>同一 WiFi</strong></li>
+        <li>点击上方按钮或复制网址到浏览器打开</li>
+        <li>也可安装 <strong>Expo Go</strong> App 扫码打开</li>
+        <li>推荐使用 Safari / Chrome 浏览器</li>
+      </ol>
+    </div>
+
+    <div class="footer">
+      日本語 Vocabulary Trainer
+    </div>
+  </div>
+</body>
+</html>

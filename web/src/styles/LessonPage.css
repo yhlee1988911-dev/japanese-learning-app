@@ -1,0 +1,401 @@
+.lesson-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.lesson-loading,
+.lesson-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 20px;
+}
+
+.lesson-header {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.back-btn {
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  color: #667eea;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: rgba(102, 126, 234, 0.2);
+  transform: translateX(-2px);
+}
+
+.header-content {
+  flex: 1;
+}
+
+.header-content h1 {
+  color: #333;
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.description {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.practice-btn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.practice-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+}
+
+.vocabulary-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.vocabulary-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.vocab-count {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 卡片网格布局 */
+.vocabulary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.vocab-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.vocab-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.15);
+}
+
+.vocab-main {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vocab-kanji {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.vocab-hiragana {
+  font-size: 14px;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.vocab-romaji {
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+}
+
+.vocab-meaning {
+  padding: 8px 12px;
+  background: white;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+  border-left: 3px solid #667eea;
+}
+
+.vocab-level {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+/* 表格布局 */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.vocabulary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.vocabulary-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.vocabulary-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vocabulary-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.vocabulary-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.vocabulary-table td {
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.cell-kanji {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cell-hiragana {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.cell-romaji {
+  color: #999;
+  font-style: italic;
+}
+
+.cell-meaning {
+  font-weight: 500;
+  color: #666;
+}
+
+.cell-level {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  font-weight: 600;
+  color: #667eea;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .lesson-header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .header-content h1 {
+    font-size: 22px;
+  }
+
+  .practice-btn {
+    width: 100%;
+  }
+
+  .vocabulary-section {
+    padding: 20px;
+  }
+
+  .vocabulary-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .vocabulary-table th,
+  .vocabulary-table td {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+
+  .cell-kanji {
+    font-size: 14px;
+  }
+
+  .vocab-kanji {
+    font-size: 18px;
+  }
+
+  .vocab-meaning {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lesson-container {
+    padding: 10px;
+  }
+
+  .lesson-header {
+    flex-direction: column;
+    padding: 16px;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .back-btn {
+    align-self: flex-start;
+    min-height: 40px;
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .header-content h1 {
+    font-size: 20px;
+    margin: 0 0 6px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .practice-btn {
+    width: 100%;
+    min-height: 48px;
+    font-size: 15px;
+  }
+
+  .vocabulary-section {
+    padding: 16px;
+  }
+
+  .vocabulary-section h2 {
+    font-size: 20px;
+  }
+
+  .vocab-count {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .vocabulary-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .vocab-card {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .vocab-kanji {
+    font-size: 18px;
+  }
+
+  .vocab-hiragana {
+    font-size: 13px;
+  }
+
+  .vocab-romaji {
+    font-size: 11px;
+  }
+
+  .vocab-meaning {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .vocab-level {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .vocabulary-table {
+    font-size: 11px;
+  }
+
+  .vocabulary-table th,
+  .vocabulary-table td {
+    padding: 8px 6px;
+  }
+
+  .cell-kanji {
+    font-size: 14px;
+  }
+
+  .cell-hiragana {
+    font-size: 12px;
+  }
+
+  .cell-romaji {
+    font-size: 11px;
+  }
+
+  .cell-meaning {
+    font-size: 12px;
+  }
+
+  .cell-level {
+    font-size: 11px;
+  }
+}

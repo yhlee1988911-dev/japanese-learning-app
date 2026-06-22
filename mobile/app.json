@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "日本語学習",
+    "slug": "japanese-learning-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.japaneselearning.app",
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "用于语音识别练习日语发音",
+        "NSMicrophoneUsageDescription": "用于语音识别练习日语发音"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.japaneselearning.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "host": {
+      "lan": true,
+      "tunnel": true
+    },
+    "plugins": []
+  }
+}

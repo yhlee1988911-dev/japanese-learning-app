@@ -1,0 +1,38 @@
+{
+  "short_name": "日语训练",
+  "name": "日本語 Vocabulary Trainer - 日语词汇记忆训练",
+  "description": "通过科学的记忆方法，高效学习日语词汇。支持 JLPT N5-N1 各级别词汇练习。",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f3ed",
+  "theme_color": "#2db78d",
+  "orientation": "portrait-primary",
+  "lang": "zh-CN",
+  "categories": ["education", "language-learning"],
+  "screenshots": []
+}

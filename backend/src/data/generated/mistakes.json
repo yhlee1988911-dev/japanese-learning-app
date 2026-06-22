@@ -1,0 +1,68 @@
+[
+  {
+    "kanji": "暖かい",
+    "hiragana": "あたたかい",
+    "romaji": "atatakai",
+    "meaning": "温暖的",
+    "level": "N5",
+    "lessonTitle": "",
+    "wrongCount": 1,
+    "lastWrongAt": "2026-06-22T16:25:06.140Z",
+    "firstWrongAt": "2026-06-22T16:25:06.140Z"
+  },
+  {
+    "kanji": "朝御飯",
+    "hiragana": "あさごはん",
+    "romaji": "asagohan",
+    "meaning": "早餐",
+    "level": "N5",
+    "lessonTitle": "",
+    "wrongCount": 1,
+    "lastWrongAt": "2026-06-22T16:27:02.961Z",
+    "firstWrongAt": "2026-06-22T16:27:02.961Z"
+  },
+  {
+    "kanji": "昨日",
+    "hiragana": "きのう",
+    "romaji": "kinou",
+    "meaning": "昨天",
+    "level": "N5",
+    "lessonTitle": "時間表現（じかんひょうげん）",
+    "wrongCount": 3,
+    "lastWrongAt": "2026-06-22T17:29:54.208Z",
+    "firstWrongAt": "2026-06-22T17:28:50.282Z"
+  },
+  {
+    "kanji": "明後日",
+    "hiragana": "あさって",
+    "romaji": "asatte",
+    "meaning": "后天",
+    "level": "N5",
+    "lessonTitle": "",
+    "wrongCount": 1,
+    "lastWrongAt": "2026-06-22T17:32:20.496Z",
+    "firstWrongAt": "2026-06-22T17:32:20.496Z"
+  },
+  {
+    "kanji": "明るい",
+    "hiragana": "あかるい",
+    "romaji": "akarui",
+    "meaning": "明亮（指性格或天气）；快乐",
+    "level": "N5",
+    "lessonTitle": "",
+    "wrongCount": 1,
+    "lastWrongAt": "2026-06-22T17:35:31.277Z",
+    "firstWrongAt": "2026-06-22T17:35:31.277Z"
+  },
+  {
+    "kanji": "二十歳",
+    "hiragana": "はたち",
+    "romaji": "hatachi",
+    "meaning": "20 years old",
+    "level": "N5",
+    "lessonTitle": "",
+    "wrongCount": 2,
+    "lastWrongAt": "2026-06-22T17:57:56.000Z",
+    "firstWrongAt": "2026-06-22T17:57:40.152Z"
+  }
+]

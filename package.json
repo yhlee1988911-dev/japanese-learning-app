@@ -1,0 +1,25 @@
+{
+  "name": "japanese-learning-app",
+  "version": "1.0.0",
+  "description": "A comprehensive Japanese learning app similar to Duolingo with web and mobile support",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "web",
+    "mobile",
+    "shared"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev": "concurrently \"PORT=5001 npm --workspace backend run dev\" \"PORT=3001 npm --workspace web run start\" \"npm --workspace mobile run start\"",
+    "build": "npm --workspace backend run build && npm --workspace web run build && npm --workspace mobile run build",
+    "test": "concurrently \"npm --workspace backend run test\" \"npm --workspace web run test\" \"npm --workspace mobile run test\"",
+    "clean": "rm -rf node_modules backend/node_modules web/node_modules mobile/node_modules shared/node_modules"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "react-native-web": "^0.19.0"
+  }
+}
