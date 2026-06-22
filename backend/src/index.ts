@@ -3,6 +3,7 @@ import cors from 'cors';
 import 'express-async-errors';
 import dotenv from 'dotenv';
 import { connectDB } from './config/database';
+import coursesRouter from './routes/courses';
 
 dotenv.config();
 
@@ -31,7 +32,7 @@ connectDB().then(connected => {
 });
 
 // Routes
-app.use('/api/courses', require('./routes/courses'));
+app.use('/api/courses', coursesRouter);
 app.use('/api/lessons', require('./routes/lessons'));
 app.use('/api/progress', require('./routes/progress'));
 app.use('/api/vocabulary', require('./routes/vocabulary'));
@@ -53,6 +54,11 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
   });
 });
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-});
+// 仅在直接运行时启动服务器（而非作为 Netlify Function 导入时）
+if (process.env.NETLIFY !== 'true') {
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 Server running on port ${PORT}`);
+  });
+}
+
+export default app;

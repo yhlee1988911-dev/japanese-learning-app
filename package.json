@@ -17,12 +17,13 @@
     "clean": "rm -rf node_modules backend/node_modules web/node_modules mobile/node_modules shared/node_modules"
   },
   "devDependencies": {
-    "concurrently": "^9.2.3"
+    "concurrently": "^9.2.3",
+    "serverless-http": "^4.0.0"
   },
   "dependencies": {
+    "ajv": "8.20.0",
     "react-native-web": "^0.19.0",
-    "react-refresh": "0.11.0",
-    "ajv": "8.20.0"
+    "react-refresh": "0.11.0"
   },
   "overrides": {}
 }
