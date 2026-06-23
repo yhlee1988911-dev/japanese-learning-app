@@ -28,11 +28,6 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
     return { statusCode: 405, headers, body: 'Method Not Allowed' };
   }
 
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) {
-    return { statusCode: 500, headers, body: 'OpenAI API key not configured' };
-  }
-
   let body: TtsRequest;
   try {
     body = JSON.parse(event.body || '{}');
@@ -46,27 +41,33 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
   }
 
   try {
-    const response = await fetch('https://api.openai.com/v1/audio/speech', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'tts-1',
-        input: text,
-        voice: 'nova',
-        response_format: 'mp3',
-      }),
-    });
+    // 调用 Google Translate TTS（免费，无需 API Key）
+    const url = new URL('https://translate.google.com/translate_tts');
+    url.searchParams.set('ie', 'UTF-8');
+    url.searchParams.set('client', 'tw-ob');
+    url.searchParams.set('tl', 'ja');
+    url.searchParams.set('q', text);
 
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error('OpenAI TTS error:', response.status, errorText);
-      return { statusCode: response.status, headers, body: errorText };
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 5000);
+
+    let response: Response;
+    try {
+      response = await fetch(url.toString(), {
+        signal: controller.signal,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (compatible; JapaneseLearningApp/1.0)',
+        },
+      });
+    } finally {
+      clearTimeout(timeout);
     }
 
-    // 返回音频二进制数据
+    if (!response.ok) {
+      console.error('Google TTS error:', response.status, response.statusText);
+      return { statusCode: 502, headers, body: 'Failed to fetch speech audio' };
+    }
+
     const audioBuffer = await response.arrayBuffer();
 
     return {
@@ -80,8 +81,13 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
       isBase64Encoded: true,
     };
   } catch (error) {
-    console.error('OpenAI TTS request failed:', error);
-    return { statusCode: 502, headers, body: 'TTS service unavailable' };
+    const timedOut = error instanceof Error && error.name === 'AbortError';
+    console.error('Google TTS request failed:', timedOut ? 'timeout' : error);
+    return {
+      statusCode: timedOut ? 504 : 502,
+      headers,
+      body: timedOut ? 'Speech service timed out' : 'TTS service unavailable',
+    };
   }
 };
 
