@@ -214,7 +214,7 @@ const PracticePage: React.FC = () => {
       keyboardScrollTimerRef.current = null;
       const input = inputRef.current;
       if (input && document.activeElement === input) {
-        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        input.scrollIntoView({ behavior: 'auto', block: 'center' });
       }
     }, delay);
   }, [isIOS]);

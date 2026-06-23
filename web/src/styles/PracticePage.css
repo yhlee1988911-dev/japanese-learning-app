@@ -717,11 +717,9 @@
 
   .action-row {
     background: rgba(255, 253, 247, 0.96);
-    bottom: env(safe-area-inset-bottom);
     justify-content: stretch;
     padding: 8px 0;
-    position: sticky;
-    z-index: 8;
+    position: static;
   }
 
   .primary-button {
