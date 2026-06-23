@@ -654,7 +654,10 @@ const PracticePage: React.FC = () => {
             <div className="progress-track" aria-hidden="true"><div style={{ width: `${progress}%` }} /></div>
             <div className="question-topline">
               <span>第 {currentIndex + 1} 题</span>
-              <span>{current.lessonTitle || (current.kind === 'sentence' ? '短句填空' : current.level)}</span>
+              <div className="question-topline-actions">
+                <span>{current.lessonTitle || (current.kind === 'sentence' ? '短句填空' : current.level)}</span>
+                <button className="skip-question-button" type="button" onClick={nextQuestion}>下一题</button>
+              </div>
             </div>
             {current.kind === 'vocabulary' && (current.pitch || current.pos) && (
               <div className="vocab-tags">
