@@ -68,6 +68,66 @@ const shuffle = <T,>(items: T[]) => {
 const normalizeAnswer = (value: string) =>
   value.trim().toLowerCase().replace(/\s+/g, '').replace(/[ー－]/g, '-');
 
+// ---- 错题本 (localStorage) ----
+const MISTAKES_KEY = 'jplt_mistakes';
+
+interface MistakeRecord {
+  kanji: string;
+  hiragana: string;
+  romaji: string;
+  meaning: string;
+  level: string;
+  lessonTitle?: string;
+  wrongCount: number;
+  lastWrongAt: string;
+  firstWrongAt: string;
+}
+
+const loadMistakes = (): MistakeRecord[] => {
+  try {
+    const raw = localStorage.getItem(MISTAKES_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+};
+
+const saveMistakes = (mistakes: MistakeRecord[]) => {
+  try {
+    localStorage.setItem(MISTAKES_KEY, JSON.stringify(mistakes));
+  } catch {
+    // ignore
+  }
+};
+
+const recordMistake = (question: PracticeQuestion) => {
+  const mistakes = loadMistakes();
+  const key = `${question.kanji || question.prompt}:${question.hiragana || question.speech}`;
+  const now = new Date().toISOString();
+  const existing = mistakes.find(
+    m => `${m.kanji}:${m.hiragana}` === key
+  );
+
+  if (existing) {
+    existing.wrongCount += 1;
+    existing.lastWrongAt = now;
+  } else {
+    mistakes.push({
+      kanji: question.kanji || question.prompt,
+      hiragana: question.hiragana || question.speech,
+      romaji: question.romaji || '',
+      meaning: question.meaning,
+      level: question.level,
+      lessonTitle: question.lessonTitle,
+      wrongCount: 1,
+      firstWrongAt: now,
+      lastWrongAt: now,
+    });
+  }
+
+  saveMistakes(mistakes);
+};
+
 const getPromptMode = (value: string | null): PromptMode => {
   if (value === 'audio' || value === 'mixed' || value === 'sentence') return value;
   return 'meaning';
@@ -518,6 +578,8 @@ const PracticePage: React.FC = () => {
       if (!missedIdsRef.current.has(current.sessionId)) {
         missedIdsRef.current.add(current.sessionId);
         setMissed(items => [...items, current]);
+        // 同步写入错题本 (localStorage)
+        recordMistake(current);
       }
     }
 
