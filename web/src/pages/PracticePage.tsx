@@ -1,11 +1,9 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { API_URL } from '../services/api';
 import '../styles/PracticePage.css';
 
 type PromptMode = 'meaning' | 'audio' | 'mixed' | 'sentence';
 type AnswerState = 'idle' | 'correct' | 'incorrect';
-type VerifyMethod = 'rules' | 'ai' | 'local';
 type QuestionKind = 'vocabulary' | 'sentence';
 
 interface ContentSource {
@@ -25,17 +23,6 @@ interface VocabularyItem {
   pitch?: string;
   pos?: string;
   lessonTitle?: string;
-  source?: ContentSource;
-}
-
-interface SentenceItem {
-  id: string;
-  sentence: string;
-  speech: string;
-  answers: string[];
-  meaning: string;
-  explanation: string;
-  level: string;
   source?: ContentSource;
 }
 
@@ -124,7 +111,6 @@ const PracticePage: React.FC = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const inputRef = useRef<HTMLInputElement>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
   const isAudioPlayingRef = useRef(false);
   const speechTimerRef = useRef<number | null>(null);
   const missedIdsRef = useRef(new Set<string>());
@@ -140,8 +126,6 @@ const PracticePage: React.FC = () => {
   const [userAnswer, setUserAnswer] = useState('');
   const [answerState, setAnswerState] = useState<AnswerState>('idle');
   const [checkingAnswer, setCheckingAnswer] = useState(false);
-  const [verificationMethod, setVerificationMethod] = useState<VerifyMethod>('local');
-  const [verificationReason, setVerificationReason] = useState('');
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [audioStatus, setAudioStatus] = useState('');
   const [score, setScore] = useState(0);
@@ -236,13 +220,6 @@ const PracticePage: React.FC = () => {
 
 
   const stopAudio = useCallback(() => {
-
-
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.src = '';
-      audioRef.current = null;
-    }
     window.speechSynthesis?.cancel();
     if (speechTimerRef.current !== null) window.clearTimeout(speechTimerRef.current);
     speechTimerRef.current = null;
@@ -255,13 +232,11 @@ const PracticePage: React.FC = () => {
     if (!current || isAudioPlayingRef.current) return;
 
     const text = current.speech;
-    let fallbackStarted = false;
     isAudioPlayingRef.current = true;
     setIsAudioPlaying(true);
     setAudioStatus('播放中...');
 
     const finish = () => {
-      audioRef.current = null;
       if (speechTimerRef.current !== null) window.clearTimeout(speechTimerRef.current);
       speechTimerRef.current = null;
       isAudioPlayingRef.current = false;
@@ -269,40 +244,27 @@ const PracticePage: React.FC = () => {
       setAudioStatus('');
     };
 
-    const playBrowserFallback = () => {
-      if (fallbackStarted) return;
-      fallbackStarted = true;
-      audioRef.current = null;
+    if (!window.speechSynthesis) {
+      isAudioPlayingRef.current = false;
+      setIsAudioPlaying(false);
+      setAudioStatus('当前浏览器无法播放语音');
+      return;
+    }
 
-      if (!window.speechSynthesis) {
-        isAudioPlayingRef.current = false;
-        setIsAudioPlaying(false);
-        setAudioStatus('当前浏览器无法播放语音');
-        return;
-      }
-
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'ja-JP';
-      utterance.rate = 0.82;
-      utterance.onend = finish;
-      utterance.onerror = finish;
-      speechTimerRef.current = window.setTimeout(finish, 12000);
-      window.speechSynthesis.cancel();
-      window.speechSynthesis.speak(utterance);
-    };
-
-    const audio = new Audio(`${API_URL}/tts/japanese?text=${encodeURIComponent(text)}`);
-    audioRef.current = audio;
-    audio.onended = finish;
-    audio.onerror = playBrowserFallback;
-    audio.play().catch(playBrowserFallback);
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'ja-JP';
+    utterance.rate = 0.82;
+    utterance.onend = finish;
+    utterance.onerror = finish;
+    speechTimerRef.current = window.setTimeout(finish, 12000);
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
   }, [current]);
 
   const resetQuestionState = useCallback(() => {
     stopAudio();
     setUserAnswer('');
     setAnswerState('idle');
-    setVerificationReason('');
   }, [stopAudio]);
 
   const nextQuestion = useCallback(() => {
@@ -313,50 +275,45 @@ const PracticePage: React.FC = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const endpoint = mode === 'sentence'
-          ? `${API_URL}/sentences/level/${level}`
-          : lessonId
-            ? `${API_URL}/vocabulary/lesson/${lessonId}`
-            : `${API_URL}/vocabulary/level/${level}`;
-        const response = await fetch(endpoint);
-
-        if (!response.ok) throw new Error(mode === 'sentence' ? '短句题库加载失败' : '词库加载失败');
-
         if (mode === 'sentence') {
-          const data: SentenceItem[] = await response.json();
-          const pool = data.map<PracticeQuestion>(item => ({
-            sessionId: item.id,
-            kind: 'sentence',
-            level: item.level,
-            prompt: item.sentence,
-            speech: item.speech,
-            answers: item.answers,
-            meaning: item.meaning,
-            explanation: item.explanation,
-            source: item.source
-          }));
-          setQuestions(buildQuestionSet(pool, requestedCount));
-        } else {
-          const data: VocabularyItem[] = await response.json();
-          const pool = data.map<PracticeQuestion>((item, index) => ({
-            sessionId: `${item.kanji}-${item.meaning}-${index}`,
-            kind: 'vocabulary',
-            level: item.level,
-            lessonTitle: item.lessonTitle,
-            prompt: item.meaning,
-            speech: item.hiragana || item.kanji,
-            answers: [item.kanji, item.hiragana, item.romaji],
-            meaning: item.meaning,
-            explanation: `${item.kanji} / ${item.hiragana} / ${item.romaji}`,
-            kanji: item.kanji,
-            hiragana: item.hiragana,
-            romaji: item.romaji,
-            pitch: item.pitch,
-            pos: item.pos,
-            source: item.source
-          }));
-          setQuestions(buildQuestionSet(pool, requestedCount));
+          // sentence 模式暂不支持，显示提示
+          setError('短句填空模式暂不支持，请选择其他模式');
+          setLoading(false);
+          return;
         }
+
+        if (lessonId) {
+          // lesson 模式暂不支持
+          setError('课程模式暂不支持，请选择等级模式');
+          setLoading(false);
+          return;
+        }
+
+        // 从静态 JSON 文件读取
+        const levelKey = level.toLowerCase();
+        const response = await fetch(`/questions/${levelKey}.json`);
+
+        if (!response.ok) throw new Error(`题库加载失败: ${level}`);
+
+        const data: VocabularyItem[] = await response.json();
+        const pool = data.map<PracticeQuestion>((item, index) => ({
+          sessionId: `${item.kanji}-${item.meaning}-${index}`,
+          kind: 'vocabulary',
+          level: item.level,
+          lessonTitle: item.lessonTitle,
+          prompt: item.meaning,
+          speech: item.hiragana || item.kanji,
+          answers: [item.kanji, item.hiragana, item.romaji],
+          meaning: item.meaning,
+          explanation: `${item.kanji} / ${item.hiragana} / ${item.romaji}`,
+          kanji: item.kanji,
+          hiragana: item.hiragana,
+          romaji: item.romaji,
+          pitch: item.pitch,
+          pos: item.pos,
+          source: item.source
+        }));
+        setQuestions(buildQuestionSet(pool, requestedCount));
       } catch (fetchError) {
         setError(fetchError instanceof Error ? fetchError.message : '题库加载失败');
       } finally {
@@ -395,39 +352,8 @@ const PracticePage: React.FC = () => {
     if (!current || answerState === 'correct' || checkingAnswer || !userAnswer.trim()) return;
 
     setCheckingAnswer(true);
-    setVerificationReason('');
 
-    let isCorrect = acceptedAnswers.includes(normalizeAnswer(userAnswer));
-    let method: VerifyMethod = 'local';
-    let reason = isCorrect ? '匹配本地答案' : '未匹配本地答案';
-
-    try {
-      const response = await fetch(`${API_URL}/answers/verify`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          userAnswer,
-          target: {
-            kanji: current.kanji,
-            hiragana: current.hiragana,
-            romaji: current.romaji,
-            meaning: current.meaning,
-            answers: current.answers,
-            sentence: current.kind === 'sentence' ? current.prompt : undefined
-          }
-        })
-      });
-
-      if (response.ok) {
-        const result: { correct: boolean; method?: VerifyMethod; reason?: string } = await response.json();
-        isCorrect = result.correct;
-        method = result.method || 'rules';
-        reason = result.reason || reason;
-      }
-    } catch (requestError) {
-      method = 'local';
-      reason = '后端验证暂不可用，已按本地规则判断';
-    }
+    const isCorrect = acceptedAnswers.includes(normalizeAnswer(userAnswer));
 
     setStats(previous => ({
       ...previous,
@@ -449,25 +375,8 @@ const PracticePage: React.FC = () => {
         missedIdsRef.current.add(current.sessionId);
         setMissed(items => [...items, current]);
       }
-      // 记录错题到后端
-      if (current.kind === 'vocabulary') {
-        fetch(`${API_URL}/mistakes`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            kanji: current.kanji,
-            hiragana: current.hiragana,
-            romaji: current.romaji,
-            meaning: current.meaning,
-            level: current.level,
-            lessonTitle: current.lessonTitle
-          })
-        }).catch(() => {});
-      }
     }
 
-    setVerificationMethod(method);
-    setVerificationReason(reason);
     setCheckingAnswer(false);
   };
 
@@ -477,7 +386,6 @@ const PracticePage: React.FC = () => {
     setCurrentIndex(0);
     setUserAnswer('');
     setAnswerState('idle');
-    setVerificationReason('');
     setScore(0);
     setStats(emptyStats());
     setMissed([]);
@@ -599,7 +507,6 @@ const PracticePage: React.FC = () => {
                 <strong>{answerState === 'correct' ? '正确' : '答案不对，请修改后再试'}</strong>
                 <span>{current.explanation}</span>
                 <small>{current.meaning}</small>
-                <em>{verificationMethod === 'ai' ? 'AI 复核' : '规则判断'}：{verificationReason}</em>
               </div>
             )}
 

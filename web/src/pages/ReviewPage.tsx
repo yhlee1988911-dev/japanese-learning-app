@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { API_URL } from '../services/api';
 import '../styles/PracticePage.css';
 import '../styles/ReviewPage.css';
 
@@ -32,11 +31,29 @@ type AnswerState = 'idle' | 'correct' | 'incorrect';
 const normalizeAnswer = (value: string) =>
   value.trim().toLowerCase().replace(/\s+/g, '').replace(/[ー－]/g, '-');
 
+const STORAGE_KEY = 'jplt_mistakes';
+
+const loadMistakes = (): MistakeRecord[] => {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
+  }
+};
+
+const saveMistakes = (mistakes: MistakeRecord[]) => {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(mistakes));
+  } catch {
+    // ignore
+  }
+};
+
 const ReviewPage: React.FC = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const inputRef = useRef<HTMLInputElement>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
   const isAudioPlayingRef = useRef(false);
   const speechTimerRef = useRef<number | null>(null);
 
@@ -61,11 +78,6 @@ const ReviewPage: React.FC = () => {
   const progress = questions.length > 0 ? (completed / questions.length) * 100 : 0;
 
   const stopAudio = useCallback(() => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.src = '';
-      audioRef.current = null;
-    }
     window.speechSynthesis?.cancel();
     if (speechTimerRef.current !== null) window.clearTimeout(speechTimerRef.current);
     speechTimerRef.current = null;
@@ -83,7 +95,6 @@ const ReviewPage: React.FC = () => {
     setAudioStatus('播放中...');
 
     const finish = () => {
-      audioRef.current = null;
       if (speechTimerRef.current !== null) window.clearTimeout(speechTimerRef.current);
       speechTimerRef.current = null;
       isAudioPlayingRef.current = false;
@@ -91,29 +102,21 @@ const ReviewPage: React.FC = () => {
       setAudioStatus('');
     };
 
-    const playBrowserFallback = () => {
-      if (!window.speechSynthesis) {
-        isAudioPlayingRef.current = false;
-        setIsAudioPlaying(false);
-        setAudioStatus('当前浏览器无法播放语音');
-        return;
-      }
+    if (!window.speechSynthesis) {
+      isAudioPlayingRef.current = false;
+      setIsAudioPlaying(false);
+      setAudioStatus('当前浏览器无法播放语音');
+      return;
+    }
 
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'ja-JP';
-      utterance.rate = 0.82;
-      utterance.onend = finish;
-      utterance.onerror = finish;
-      speechTimerRef.current = window.setTimeout(finish, 12000);
-      window.speechSynthesis.cancel();
-      window.speechSynthesis.speak(utterance);
-    };
-
-    const audio = new Audio(`${API_URL}/tts/japanese?text=${encodeURIComponent(text)}`);
-    audioRef.current = audio;
-    audio.onended = finish;
-    audio.onerror = playBrowserFallback;
-    audio.play().catch(playBrowserFallback);
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'ja-JP';
+    utterance.rate = 0.82;
+    utterance.onend = finish;
+    utterance.onerror = finish;
+    speechTimerRef.current = window.setTimeout(finish, 12000);
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
   }, [current]);
 
   const resetQuestionState = useCallback(() => {
@@ -130,9 +133,8 @@ const ReviewPage: React.FC = () => {
   useEffect(() => {
     const fetchMistakes = async () => {
       try {
-        const response = await fetch(`${API_URL}/mistakes`);
-        if (!response.ok) throw new Error('错题加载失败');
-        const data: MistakeRecord[] = await response.json();
+        // 从 localStorage 读取错题
+        const data = loadMistakes();
         setMistakes(data);
 
         const pool: ReviewQuestion[] = data.map((item, index) => ({
@@ -214,24 +216,19 @@ const ReviewPage: React.FC = () => {
     checkAnswer();
   };
 
-  const clearMistake = async (kanji: string, hiragana: string) => {
-    const id = encodeURIComponent(`${kanji}:${hiragana}`);
-    try {
-      await fetch(`${API_URL}/mistakes/${id}`, { method: 'DELETE' });
-      setClearedIds(prev => new Set(prev).add(`${kanji}:${hiragana}`));
-    } catch {
-      // ignore
-    }
+  const clearMistake = (kanji: string, hiragana: string) => {
+    const updated = mistakes.filter(
+      m => !(m.kanji === kanji && m.hiragana === hiragana)
+    );
+    setMistakes(updated);
+    saveMistakes(updated);
+    setClearedIds(prev => new Set(prev).add(`${kanji}:${hiragana}`));
   };
 
-  const clearAllMistakes = async () => {
-    try {
-      await fetch(`${API_URL}/mistakes`, { method: 'DELETE' });
-      setQuestions([]);
-      setMistakes([]);
-    } catch {
-      // ignore
-    }
+  const clearAllMistakes = () => {
+    setQuestions([]);
+    setMistakes([]);
+    saveMistakes([]);
   };
 
   const restart = () => {
