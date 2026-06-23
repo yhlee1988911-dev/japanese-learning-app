@@ -171,6 +171,7 @@ const PracticePage: React.FC = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const inputRef = useRef<HTMLInputElement>(null);
+  const actionRowRef = useRef<HTMLDivElement>(null);
   const isAudioPlayingRef = useRef(false);
   const speechTimerRef = useRef<number | null>(null);
   const keyboardScrollTimerRef = useRef<number | null>(null);
@@ -213,8 +214,19 @@ const PracticePage: React.FC = () => {
     keyboardScrollTimerRef.current = window.setTimeout(() => {
       keyboardScrollTimerRef.current = null;
       const input = inputRef.current;
-      if (input && document.activeElement === input) {
-        input.scrollIntoView({ behavior: 'auto', block: 'center' });
+      const actionRow = actionRowRef.current;
+      const viewport = window.visualViewport;
+      if (!input || !actionRow || !viewport || document.activeElement !== input) return;
+
+      const inputRect = input.getBoundingClientRect();
+      const actionRect = actionRow.getBoundingClientRect();
+      const visibleTop = viewport.offsetTop + 72;
+      const visibleBottom = viewport.offsetTop + viewport.height - 12;
+
+      if (actionRect.bottom > visibleBottom) {
+        window.scrollBy({ top: actionRect.bottom - visibleBottom, behavior: 'auto' });
+      } else if (inputRect.top < visibleTop) {
+        window.scrollBy({ top: inputRect.top - visibleTop, behavior: 'auto' });
       }
     }, delay);
   }, [isIOS]);
@@ -735,7 +747,7 @@ const PracticePage: React.FC = () => {
               </div>
             )}
 
-            <div className="action-row">
+            <div className="action-row" ref={actionRowRef}>
               {answerState === 'correct' ? (
                 <button className="primary-button" type="button" onClick={nextQuestion}>
                   {currentIndex >= questions.length - 1 ? '查看结果' : '下一题'}
