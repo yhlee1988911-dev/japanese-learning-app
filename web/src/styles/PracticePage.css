@@ -1,5 +1,6 @@
 .practice-page {
   min-height: 100vh;
+  min-height: 100dvh;
   padding: 24px;
 }
 
@@ -526,7 +527,9 @@
 /* 防止 iOS 输入法弹出时页面自动上滚 */
 @media (max-width: 480px) {
   .practice-page {
-    padding: 0;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    padding: 0 0 env(safe-area-inset-bottom);
     /* 防止输入法弹出时页面整体上滚 */
     position: relative;
     overflow-y: auto;
@@ -536,7 +539,7 @@
   .practice-nav {
     flex-direction: row;
     align-items: center;
-    padding: 10px 12px;
+    padding: calc(10px + env(safe-area-inset-top)) 12px 10px;
     margin: 0 0 0;
     gap: 8px;
     background: rgba(255, 253, 247, 0.95);
@@ -548,7 +551,7 @@
 
 
   .practice-nav .ghost-button {
-    min-height: 36px;
+    min-height: 44px;
     padding: 0 12px;
     font-size: 13px;
   }
@@ -556,6 +559,10 @@
   .practice-meta span {
     font-size: 11px;
     padding: 5px 8px;
+  }
+
+  .practice-meta {
+    min-width: 0;
   }
 
   .trainer-layout {
@@ -603,17 +610,33 @@
   }
 
   .question-topline {
+    align-items: center;
+    gap: 8px;
     font-size: 12px;
     margin-bottom: 12px;
   }
 
+  .question-topline > span:first-child {
+    flex-shrink: 0;
+  }
+
   .question-topline-actions {
     gap: 6px;
+    justify-content: flex-end;
+    max-width: 70%;
+    min-width: 0;
+  }
+
+  .question-topline-actions > span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .skip-question-button {
-    min-height: 28px;
-    padding: 0 8px;
+    flex-shrink: 0;
+    min-height: 44px;
+    padding: 0 10px;
   }
 
   .prompt-panel {
@@ -624,6 +647,7 @@
 
   .prompt-panel h1 {
     font-size: 32px;
+    overflow-wrap: anywhere;
   }
 
   .prompt-panel .sentence-prompt {

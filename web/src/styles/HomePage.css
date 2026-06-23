@@ -474,8 +474,9 @@
 /* 功能区元素增大，内容间距增大，底部只留圆弧区域 */
 @media (max-width: 480px) {
   .home-shell {
-    padding: 0;
     min-height: 100vh;
+    min-height: 100dvh;
+    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
     display: flex;
     flex-direction: column;
   }
@@ -633,13 +634,13 @@
 
   .count-control button {
     font-size: 15px;
-    height: 38px;
+    height: 44px;
     width: 52px;
     min-width: 0;
   }
 
   .custom-count {
-    min-height: 38px;
+    min-height: 44px;
     padding: 4px 8px;
     gap: 5px;
   }
@@ -649,7 +650,7 @@
   }
 
   .custom-count input {
-    height: 26px;
+    height: 32px;
     width: 44px;
     font-size: 14px;
   }
@@ -662,6 +663,7 @@
   .auto-next-control {
     margin-top: 8px;
     gap: 10px;
+    min-height: 44px;
   }
 
   .auto-next-control > span {
@@ -755,7 +757,6 @@
     border-width: 1.5px;
   }
 }
-
 
 
 
