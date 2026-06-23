@@ -217,6 +217,8 @@ const PracticePage: React.FC = () => {
       const actionRow = actionRowRef.current;
       const viewport = window.visualViewport;
       if (!input || !actionRow || !viewport || document.activeElement !== input) return;
+      const keyboardHeight = window.innerHeight - viewport.height - viewport.offsetTop;
+      if (keyboardHeight < 120) return;
 
       const inputRect = input.getBoundingClientRect();
       const actionRect = actionRow.getBoundingClientRect();
