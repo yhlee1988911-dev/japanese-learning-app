@@ -219,15 +219,11 @@ const PracticePage: React.FC = () => {
   }, [getAudioCtx]);
 
 
-  // 缓存找到的日语语音，避免每次重复查找
+  // 缓存找到的日语语音
   const japaneseVoiceRef = useRef<SpeechSynthesisVoice | null>(null);
-  const voiceSearchAttemptedRef = useRef(false);
 
-  /** 查找设备上最佳的日语语音 */
+  /** 查找设备上最佳的日语语音（每次调用都重新尝试，因为 Safari 上 getVoices() 可能延迟加载） */
   const findJapaneseVoice = useCallback((): SpeechSynthesisVoice | null => {
-    if (voiceSearchAttemptedRef.current) return japaneseVoiceRef.current;
-    voiceSearchAttemptedRef.current = true;
-
     const voices = window.speechSynthesis?.getVoices() ?? [];
     if (voices.length === 0) return null;
 
@@ -248,6 +244,19 @@ const PracticePage: React.FC = () => {
     japaneseVoiceRef.current = null;
     return null;
   }, []);
+
+  /** 监听 voiceschanged 事件，等语音列表加载完成后自动查找日语语音 */
+  useEffect(() => {
+    if (!window.speechSynthesis || !window.speechSynthesis.onvoiceschanged) return;
+
+    const handleVoicesChanged = () => {
+      findJapaneseVoice();
+    };
+
+    window.speechSynthesis.addEventListener('voiceschanged', handleVoicesChanged);
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', handleVoicesChanged);
+  }, [findJapaneseVoice]);
+
 
   /** 唤醒 SpeechSynthesis（iOS 需要用户手势触发） */
   const warmupSpeech = useCallback(() => {
