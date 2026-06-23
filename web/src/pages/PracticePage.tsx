@@ -205,6 +205,8 @@ const PracticePage: React.FC = () => {
 
   const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches ||
+    Boolean((navigator as Navigator & { standalone?: boolean }).standalone);
 
   const scheduleInputVisibility = useCallback((delay = 160) => {
     if (!isIOS) return;
@@ -568,9 +570,10 @@ const PracticePage: React.FC = () => {
 
   useEffect(() => {
     if (answerState === 'correct') return;
+    if (isStandalone && currentIndex === 0 && answerState === 'idle') return;
     inputRef.current?.focus();
     scheduleInputVisibility(answerState === 'incorrect' ? 100 : 180);
-  }, [currentIndex, answerState, scheduleInputVisibility]);
+  }, [currentIndex, answerState, isStandalone, scheduleInputVisibility]);
 
   useEffect(() => {
     if (answerState !== 'correct' || !autoNext) return undefined;
