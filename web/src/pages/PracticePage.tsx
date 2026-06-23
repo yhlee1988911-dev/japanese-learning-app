@@ -277,24 +277,32 @@ const PracticePage: React.FC = () => {
 
   /** 通过 Netlify Function 调用 OpenAI TTS */
   const speakWithOpenAI = useCallback(async (text: string): Promise<boolean> => {
-    // 检查缓存
-    const cached = audioCacheRef.current.get(text);
-    if (cached) {
-      cached.currentTime = 0;
-      cached.play().catch(() => {});
-      return true;
-    }
-
     try {
+      // 检查缓存
+      const cached = audioCacheRef.current.get(text);
+      if (cached) {
+        cached.currentTime = 0;
+        await cached.play().catch(() => {});
+        return true;
+      }
+
       const response = await fetch('/.netlify/functions/tts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text }),
       });
 
-      if (!response.ok) return false;
+      if (!response.ok) {
+        console.warn('OpenAI TTS API 返回错误:', response.status, response.statusText);
+        return false;
+      }
 
       const blob = await response.blob();
+      if (blob.size === 0) {
+        console.warn('OpenAI TTS 返回空音频');
+        return false;
+      }
+
       const url = URL.createObjectURL(blob);
       const audio = new Audio(url);
 
@@ -306,16 +314,23 @@ const PracticePage: React.FC = () => {
           URL.revokeObjectURL(url);
           resolve(true);
         };
-        audio.onerror = () => {
+        audio.onerror = (e) => {
+          console.warn('OpenAI TTS 音频播放失败:', e);
           URL.revokeObjectURL(url);
           resolve(false);
         };
-        audio.play().catch(() => resolve(false));
+        audio.play().catch((err) => {
+          console.warn('OpenAI TTS audio.play() 失败:', err);
+          URL.revokeObjectURL(url);
+          resolve(false);
+        });
       });
-    } catch {
+    } catch (err) {
+      console.warn('OpenAI TTS 请求异常:', err);
       return false;
     }
   }, []);
+
 
   /** 使用设备本地 SpeechSynthesis 播放（fallback） */
   const speakWithDevice = useCallback((text: string): Promise<void> => {
