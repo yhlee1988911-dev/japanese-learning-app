@@ -286,6 +286,7 @@ const PracticePage: React.FC = () => {
         return true;
       }
 
+      console.log('TTS: 开始请求', text);
       const response = await fetch('/.netlify/functions/tts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -293,13 +294,15 @@ const PracticePage: React.FC = () => {
       });
 
       if (!response.ok) {
-        console.warn('OpenAI TTS API 返回错误:', response.status, response.statusText);
+        console.warn('TTS API 返回错误:', response.status, response.statusText);
         return false;
       }
 
+      console.log('TTS: 请求成功, Content-Type:', response.headers.get('Content-Type'));
       const blob = await response.blob();
+      console.log('TTS: blob 大小:', blob.size, '类型:', blob.type);
       if (blob.size === 0) {
-        console.warn('OpenAI TTS 返回空音频');
+        console.warn('TTS 返回空音频');
         return false;
       }
 
@@ -311,22 +314,25 @@ const PracticePage: React.FC = () => {
 
       return new Promise((resolve) => {
         audio.onended = () => {
+          console.log('TTS: 音频播放结束');
           URL.revokeObjectURL(url);
           resolve(true);
         };
         audio.onerror = (e) => {
-          console.warn('OpenAI TTS 音频播放失败:', e);
+          console.warn('TTS 音频播放失败:', e);
           URL.revokeObjectURL(url);
           resolve(false);
         };
-        audio.play().catch((err) => {
-          console.warn('OpenAI TTS audio.play() 失败:', err);
+        audio.play().then(() => {
+          console.log('TTS: audio.play() 成功');
+        }).catch((err) => {
+          console.warn('TTS audio.play() 失败:', err.message);
           URL.revokeObjectURL(url);
           resolve(false);
         });
       });
     } catch (err) {
-      console.warn('OpenAI TTS 请求异常:', err);
+      console.warn('TTS 请求异常:', err);
       return false;
     }
   }, []);
