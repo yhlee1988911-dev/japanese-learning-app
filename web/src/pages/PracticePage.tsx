@@ -219,6 +219,50 @@ const PracticePage: React.FC = () => {
   }, [getAudioCtx]);
 
 
+  // 缓存找到的日语语音，避免每次重复查找
+  const japaneseVoiceRef = useRef<SpeechSynthesisVoice | null>(null);
+  const voiceSearchAttemptedRef = useRef(false);
+
+  /** 查找设备上最佳的日语语音 */
+  const findJapaneseVoice = useCallback((): SpeechSynthesisVoice | null => {
+    if (voiceSearchAttemptedRef.current) return japaneseVoiceRef.current;
+    voiceSearchAttemptedRef.current = true;
+
+    const voices = window.speechSynthesis?.getVoices() ?? [];
+    if (voices.length === 0) return null;
+
+    // 优先级：ja-JP 精确匹配 > ja 区域匹配 > 任何日语变体
+    const jaJP = voices.find(v => v.lang === 'ja-JP');
+    if (jaJP) {
+      japaneseVoiceRef.current = jaJP;
+      return jaJP;
+    }
+
+    const jaAny = voices.find(v => v.lang.startsWith('ja'));
+    if (jaAny) {
+      japaneseVoiceRef.current = jaAny;
+      return jaAny;
+    }
+
+    // 实在没有日语语音，用默认语音
+    japaneseVoiceRef.current = null;
+    return null;
+  }, []);
+
+  /** 唤醒 SpeechSynthesis（iOS 需要用户手势触发） */
+  const warmupSpeech = useCallback(() => {
+    if (!window.speechSynthesis) return;
+    // iOS Safari 需要先产生一个无声的 utterance 来激活
+    try {
+      const silent = new SpeechSynthesisUtterance('');
+      silent.volume = 0;
+      window.speechSynthesis.speak(silent);
+      window.speechSynthesis.cancel();
+    } catch {
+      // 静默失败
+    }
+  }, []);
+
   const stopAudio = useCallback(() => {
     window.speechSynthesis?.cancel();
     if (speechTimerRef.current !== null) window.clearTimeout(speechTimerRef.current);
@@ -254,12 +298,38 @@ const PracticePage: React.FC = () => {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'ja-JP';
     utterance.rate = 0.82;
+
+    // 自动选择设备上最佳的日语语音
+    const voice = findJapaneseVoice();
+    if (voice) {
+      utterance.voice = voice;
+    }
+
     utterance.onend = finish;
-    utterance.onerror = finish;
+    utterance.onerror = (event) => {
+      // iOS 上第一次播放可能因未激活而失败，尝试唤醒后重试一次
+      if (event.error === 'interrupted' || event.error === 'canceled') {
+        warmupSpeech();
+        // 延迟重试
+        speechTimerRef.current = window.setTimeout(() => {
+          if (!current || isAudioPlayingRef.current) return;
+          const retry = new SpeechSynthesisUtterance(text);
+          retry.lang = 'ja-JP';
+          retry.rate = 0.82;
+          if (voice) retry.voice = voice;
+          retry.onend = finish;
+          retry.onerror = finish;
+          window.speechSynthesis.speak(retry);
+        }, 300);
+        return;
+      }
+      finish();
+    };
     speechTimerRef.current = window.setTimeout(finish, 12000);
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utterance);
-  }, [current]);
+  }, [current, findJapaneseVoice, warmupSpeech]);
+
 
   const resetQuestionState = useCallback(() => {
     stopAudio();
