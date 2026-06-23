@@ -284,19 +284,20 @@
   font-weight: 800;
 }
 
-.custom-count input {
+.custom-count select {
   background: #f4efe6;
   border: 0;
   border-radius: 6px;
   color: #17211f;
+  cursor: pointer;
   font: inherit;
   font-weight: 900;
   height: 34px;
   text-align: center;
-  width: 58px;
+  width: 68px;
 }
 
-.custom-count input:focus {
+.custom-count select:focus {
   box-shadow: 0 0 0 3px rgba(45, 183, 141, 0.18);
   outline: none;
 }
@@ -641,9 +642,9 @@
     font-size: 13px;
   }
 
-  .custom-count input {
-    height: 32px;
-    width: 44px;
+  .custom-count select {
+    height: 36px;
+    width: 58px;
     font-size: 14px;
   }
 
@@ -771,6 +772,5 @@
     min-width: 0;
   }
 }
-
 
 

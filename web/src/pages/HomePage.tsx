@@ -30,6 +30,7 @@ const modes: Array<{
 ];
 
 const counts = [5, 10, 20, 50];
+const customCountOptions = Array.from({ length: 200 }, (_, index) => index + 1);
 
 const clampCount = (value: number) => Math.min(200, Math.max(1, Math.round(value || 1)));
 
@@ -148,25 +149,22 @@ const HomePage: React.FC = () => {
               ))}
               <label className="custom-count">
                 <span>自定义</span>
-                <input
+                <select
                   aria-label="自定义题量，1到200题"
-                  type="text"
-                  inputMode="numeric"
-                  pattern="[0-9]*"
                   value={countInput}
                   onChange={event => {
-                    const digits = event.target.value.replace(/\D/g, '').slice(0, 3);
-                    const corrected = Number(digits) > 200 ? '200' : digits;
-                    setCountInput(corrected);
-                    if (corrected) setCount(clampCount(Number(corrected)));
-                  }}
-                  onBlur={() => {
-                    const nextCount = clampCount(Number(countInput));
+                    const nextCount = clampCount(Number(event.target.value));
                     setCount(nextCount);
                     setCountInput(String(nextCount));
                   }}
-                />
-                <small>1-200</small>
+                >
+                  {customCountOptions.map(item => (
+                    <option key={item} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </select>
+                <small>题</small>
               </label>
             </div>
 
