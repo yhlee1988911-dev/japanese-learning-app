@@ -1,7 +1,7 @@
 [build]
   base = "/"
-  publish = "netlify-deploy"
-  command = "echo 'skip build'"
+  publish = "web/build"
+  command = "npm run build --workspace=web"
 
 [build.environment]
   NODE_VERSION = "22"
