@@ -679,7 +679,7 @@
 
   .answer-field {
     gap: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .answer-field span {
@@ -716,9 +716,9 @@
   }
 
   .action-row {
-    background: rgba(255, 253, 247, 0.96);
+    background: transparent;
     justify-content: stretch;
-    padding: 8px 0;
+    padding: 20px 0 8px;
     position: static;
   }
 
