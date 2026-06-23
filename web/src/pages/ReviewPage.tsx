@@ -77,6 +77,96 @@ const ReviewPage: React.FC = () => {
   const completed = answerState === 'correct' ? currentIndex + 1 : currentIndex;
   const progress = questions.length > 0 ? (completed / questions.length) * 100 : 0;
 
+  // 音频缓存：避免重复请求相同文本
+  const audioCacheRef = useRef<Map<string, HTMLAudioElement>>(new Map());
+
+  // 缓存找到的日语语音
+  const japaneseVoiceRef = useRef<SpeechSynthesisVoice | null>(null);
+
+  /** 查找设备上最佳的日语语音 */
+  const findJapaneseVoice = useCallback((): SpeechSynthesisVoice | null => {
+    const voices = window.speechSynthesis?.getVoices() ?? [];
+    if (voices.length === 0) return null;
+
+    const jaJP = voices.find(v => v.lang === 'ja-JP');
+    if (jaJP) {
+      japaneseVoiceRef.current = jaJP;
+      return jaJP;
+    }
+
+    const jaAny = voices.find(v => v.lang.startsWith('ja'));
+    if (jaAny) {
+      japaneseVoiceRef.current = jaAny;
+      return jaAny;
+    }
+
+    japaneseVoiceRef.current = null;
+    return null;
+  }, []);
+
+  /** 监听 voiceschanged 事件 */
+  useEffect(() => {
+    if (!window.speechSynthesis || !window.speechSynthesis.onvoiceschanged) return;
+    const handleVoicesChanged = () => { findJapaneseVoice(); };
+    window.speechSynthesis.addEventListener('voiceschanged', handleVoicesChanged);
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', handleVoicesChanged);
+  }, [findJapaneseVoice]);
+
+  /** 通过 Netlify Function 调用 TTS */
+  const speakWithOpenAI = useCallback(async (text: string): Promise<boolean> => {
+    try {
+      const cached = audioCacheRef.current.get(text);
+      if (cached) {
+        cached.currentTime = 0;
+        await cached.play().catch(() => {});
+        return true;
+      }
+
+      const response = await fetch('/.netlify/functions/tts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text }),
+      });
+
+      if (!response.ok) return false;
+
+      const blob = await response.blob();
+      if (blob.size === 0) return false;
+
+      const url = URL.createObjectURL(blob);
+      const audio = new Audio(url);
+      audioCacheRef.current.set(text, audio);
+
+      return new Promise((resolve) => {
+        audio.onended = () => { URL.revokeObjectURL(url); resolve(true); };
+        audio.onerror = () => { URL.revokeObjectURL(url); resolve(false); };
+        audio.play().catch(() => { URL.revokeObjectURL(url); resolve(false); });
+      });
+    } catch {
+      return false;
+    }
+  }, []);
+
+  /** 使用设备本地 SpeechSynthesis 播放（fallback） */
+  const speakWithDevice = useCallback((text: string): Promise<void> => {
+    return new Promise((resolve) => {
+      if (!window.speechSynthesis) { resolve(); return; }
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'ja-JP';
+      utterance.rate = 0.82;
+
+      const voice = findJapaneseVoice();
+      if (voice) utterance.voice = voice;
+
+      utterance.onend = () => resolve();
+      utterance.onerror = () => resolve();
+
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utterance);
+    });
+  }, [findJapaneseVoice]);
+
   const stopAudio = useCallback(() => {
     window.speechSynthesis?.cancel();
     if (speechTimerRef.current !== null) window.clearTimeout(speechTimerRef.current);
@@ -86,7 +176,7 @@ const ReviewPage: React.FC = () => {
     setAudioStatus('');
   }, []);
 
-  const speakCurrent = useCallback(() => {
+  const speakCurrent = useCallback(async () => {
     if (!current || isAudioPlayingRef.current) return;
 
     const text = current.hiragana || current.kanji;
@@ -102,22 +192,20 @@ const ReviewPage: React.FC = () => {
       setAudioStatus('');
     };
 
-    if (!window.speechSynthesis) {
-      isAudioPlayingRef.current = false;
-      setIsAudioPlaying(false);
-      setAudioStatus('当前浏览器无法播放语音');
+    speechTimerRef.current = window.setTimeout(finish, 12000);
+
+    // 优先使用 Netlify Function TTS
+    const openaiSuccess = await speakWithOpenAI(text);
+    if (openaiSuccess) {
+      finish();
       return;
     }
 
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'ja-JP';
-    utterance.rate = 0.82;
-    utterance.onend = finish;
-    utterance.onerror = finish;
-    speechTimerRef.current = window.setTimeout(finish, 12000);
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utterance);
-  }, [current]);
+    // 失败，fallback 到设备语音
+    setAudioStatus('使用设备语音...');
+    await speakWithDevice(text);
+    finish();
+  }, [current, speakWithOpenAI, speakWithDevice]);
 
   const resetQuestionState = useCallback(() => {
     stopAudio();
