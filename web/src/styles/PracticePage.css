@@ -524,13 +524,13 @@
 }
 
 /* ===== 手机端专用适配 (≤480px) ===== */
-/* 防止 iOS 输入法弹出时页面自动上滚 */
+/* 保持 iOS 软键盘场景中的输入与操作区域可见 */
 @media (max-width: 480px) {
   .practice-page {
     min-height: 100dvh;
     overflow-x: hidden;
     padding: 0 0 env(safe-area-inset-bottom);
-    /* 防止输入法弹出时页面整体上滚 */
+    scroll-padding-bottom: calc(88px + env(safe-area-inset-bottom));
     position: relative;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -690,6 +690,7 @@
     font-size: 18px;
     min-height: 52px;
     padding: 0 14px;
+    scroll-margin-block: 120px;
   }
 
   .result-callout {
@@ -715,7 +716,12 @@
   }
 
   .action-row {
+    background: rgba(255, 253, 247, 0.96);
+    bottom: env(safe-area-inset-bottom);
     justify-content: stretch;
+    padding: 8px 0;
+    position: sticky;
+    z-index: 8;
   }
 
   .primary-button {

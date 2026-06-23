@@ -173,6 +173,7 @@ const PracticePage: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const isAudioPlayingRef = useRef(false);
   const speechTimerRef = useRef<number | null>(null);
+  const keyboardScrollTimerRef = useRef<number | null>(null);
   const missedIdsRef = useRef(new Set<string>());
 
   const level = searchParams.get('level') || 'N5';
@@ -201,38 +202,51 @@ const PracticePage: React.FC = () => {
     ? currentIndex % 2 === 0 ? 'meaning' : 'audio'
     : mode;
 
-  // 防止 iOS 输入法弹出时页面自动上滚
-  // 使用 visualViewport API 实时修正滚动位置
-  const scrollPositionRef = useRef(0);
   const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+  const scheduleInputVisibility = useCallback((delay = 160) => {
+    if (!isIOS) return;
+    if (keyboardScrollTimerRef.current !== null) {
+      window.clearTimeout(keyboardScrollTimerRef.current);
+    }
+    keyboardScrollTimerRef.current = window.setTimeout(() => {
+      keyboardScrollTimerRef.current = null;
+      const input = inputRef.current;
+      if (input && document.activeElement === input) {
+        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, delay);
+  }, [isIOS]);
 
   useEffect(() => {
     const vv = window.visualViewport;
     if (!isIOS || !vv) return;
 
     const handleViewportResize = () => {
-      // 输入法弹出时 visualViewport 高度会变小，页面被顶上去
-      // 立即恢复滚动位置
-      if (document.activeElement?.tagName === 'INPUT') {
-        window.scrollTo(0, scrollPositionRef.current);
-      }
+      scheduleInputVisibility();
     };
 
     vv.addEventListener('resize', handleViewportResize);
-    return () => vv.removeEventListener('resize', handleViewportResize);
-  }, [isIOS]);
+    return () => {
+      vv.removeEventListener('resize', handleViewportResize);
+      if (keyboardScrollTimerRef.current !== null) {
+        window.clearTimeout(keyboardScrollTimerRef.current);
+      }
+    };
+  }, [isIOS, scheduleInputVisibility]);
 
 
   const handleInputFocus = useCallback(() => {
-    if (!isIOS) return;
-    scrollPositionRef.current = window.scrollY;
-  }, [isIOS]);
+    scheduleInputVisibility(220);
+  }, [scheduleInputVisibility]);
 
   const handleInputBlur = useCallback(() => {
-    if (!isIOS) return;
-    window.scrollTo(0, scrollPositionRef.current);
-  }, [isIOS]);
+    if (keyboardScrollTimerRef.current !== null) {
+      window.clearTimeout(keyboardScrollTimerRef.current);
+      keyboardScrollTimerRef.current = null;
+    }
+  }, []);
 
   // 用 Web Audio API 生成音效 — 全局复用 AudioContext
   const audioCtxRef = useRef<AudioContext | null>(null);
@@ -539,8 +553,10 @@ const PracticePage: React.FC = () => {
   }, [activeMode, loading, speakCurrent, autoSpeak]);
 
   useEffect(() => {
+    if (answerState === 'correct') return;
     inputRef.current?.focus();
-  }, [currentIndex, answerState]);
+    scheduleInputVisibility(answerState === 'incorrect' ? 100 : 180);
+  }, [currentIndex, answerState, scheduleInputVisibility]);
 
   useEffect(() => {
     if (answerState !== 'correct' || !autoNext) return undefined;
